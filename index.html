@@ -41,13 +41,19 @@
 
             a:hover {
             	text-decoration: none;
-            	color: #cccccc;
+            	color: #ffff00;
             }
 
             .clear {
             	width:100%;
             	clear:both;
             }
+
+            .outer {
+            	position:relative;
+            	left:-10000px;
+            }
+            
         </style>
 
         <style>
@@ -187,7 +193,15 @@
         </div>
 
         <div class="row section" id="resume" style="padding-top: 8%; background: #f47e94; min-height: 360px;">
-
+        	<div class="col-xs-12 outer" style="text-align:center" id="resume-container">
+		        <a href="javascript:showResume()"><h2><strong>Click to view my resume.</strong></h2></a>
+		        <div id="resume-box" style="overflow:hidden;display:none;padding-bottom:50px;"><img src="./content/resume.png" style="border-radius: 5px;"></div>
+	        </div>
+	        <script>
+	        	function showResume() {
+	        		$('#resume-box').slideToggle(1000);
+	        	}
+	        </script>
         </div>
 
         <div class="row section" id="mypast" style="padding-top: 8%; background: #ffd93a; min-height: 360px;">
@@ -222,6 +236,7 @@
                 }
                 else if(height > ($('#resume').offset().top-($(window)).height()/2)) {
                     $('#resumeNav').addClass('btn-primary').addClass('active');
+                    $('#resume-container').removeClass('outer').addClass('animated').addClass('bounceInLeft');
                 }
                 else if(height > ($('#experiences').offset().top-($(window)).height()/2)) {
                     $('#expsNav').addClass('btn-primary').addClass('active');
