@@ -35,13 +35,17 @@
             p {
                 font-size:1.1em;
             }
-            div, a, p {
+            div, a, a:focus, p {
             	color: #ffffff;
             }
 
             a:hover {
             	text-decoration: none;
             	color: #ffff00;
+            }
+
+            a:focus, a:active {
+            	text-decoration: none;
             }
 
             .clear {
@@ -144,9 +148,7 @@
 		            </ul>
 		            <script>
 			            function scrollTo(element) {
-			                $('html,body').animate({
-			                    scrollTop: $('#' + element).offset().top - 42
-			                }, 700);
+			                $('html,body').animate({scrollTop: $('#' + element).offset().top - 42}, 700);
 			            }
 		            </script>
 		        </div>
@@ -194,7 +196,7 @@
 
         <div class="row section" id="resume" style="padding-top: 8%; background: #f47e94; min-height: 360px;">
         	<div class="col-xs-12 outer" style="text-align:center" id="resume-container">
-		        <a href="javascript:showResume()"><h2><strong>Click to view my resume.</strong></h2></a>
+		        <a href="javascript:showResume()" style="text-decoration: none;"><h2><strong>Click to view my resume.</strong></h2></a>
 		        <div id="resume-box" style="overflow:hidden;display:none;padding-bottom:50px;"><img src="./content/resume.png" style="border-radius: 5px;"></div>
 	        </div>
 	        <script>
