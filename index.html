@@ -194,7 +194,7 @@
         </div>
 
         <div class="row section" id="resume" style="padding-top: 8%; background: #f47e94; min-height: 360px;">
-        	<div class="col-xs-12 outer" style="text-align:center" id="resume-container">
+        	<div class="col-xs-12" style="text-align:center" id="resume-container">
         		<div id="btn-show-resume-holder">
 			        <a href="javascript:showResume()" style="text-decoration: none;" id="btn-show-resume"><h2><strong class="btn-border" style="padding: 5px 20px 5px 20px; border-radius: 12px;" >View my resume</strong></h2></a>
 			    </div>
@@ -259,7 +259,7 @@
                 }
                 else if(height > ($('#resume').offset().top-($(window)).height()/2)) {
                     $('#resumeNav').addClass('btn-primary').addClass('active');
-                    $('#resume-container').removeClass('outer').addClass('animated').addClass('swing');
+                    $('#resume-container').addClass('animated').addClass('swing');
                 }
                 else if(height > ($('#experiences').offset().top-($(window)).height()/2)) {
                     $('#expsNav').addClass('btn-primary').addClass('active');
