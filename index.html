@@ -105,17 +105,17 @@
 		        <div class="col-lg-12" style="z-index:10;">
 		            <div class="col-xs-12 animated bounceInDown" style="text-align:center">
 		            	<div class="col-xs-4" style="z-index:12">
-		            		<a class="animated rubberBand delayp5" href="http://www.songrenchu.com" target="blank" style="float:right;margin-top:20px;"><img src="./content/website.png"></a>
+		            		<a class="contact-logo animated rubberBand delayp5" href="http://www.songrenchu.com" target="blank" style="float:right;margin-top:20px;"><img src="./content/website.png"></a>
 		            		<div class="clear" style="height:50px;"></div>
-			            	<a class="animated rubberBand delayp6" href="https://cn.linkedin.com/pub/renchu-song/47/992/a40" target="blank" style="float:right;"><img src="./content/linkedin.png"></a>
+			            	<a class="contact-logo animated rubberBand delayp6" href="https://cn.linkedin.com/pub/renchu-song/47/992/a40" target="blank" style="float:right;"><img src="./content/linkedin.png"></a>
 		            	</div>
-			            <div class="col-xs-4" style="z-index:15">
+			            <div class="col-xs-4" style="z-index:15;">
 			            	<img src="./content/myphoto1.png">
 			            </div>
 			            <div class="col-xs-4" style="z-index:12">
-			            	<a class="animated rubberBand delayp6" href="https://github.com/RenchuSong" target="blank" style="float:left;margin-top:20px;"><img src="./content/github.png"></a>
+			            	<a class="contact-logo animated rubberBand delayp6" href="https://github.com/RenchuSong" target="blank" style="float:left;margin-top:20px;"><img src="./content/github.png"></a>
 			            	<div class="clear" style="height:50px;"></div>
-			            	<a class="animated rubberBand delayp5" href="https://www.facebook.com/renchu.song" target="blank" style="float:left;"><img src="./content/facebook.png"></a>
+			            	<a class="contact-logo animated rubberBand delayp5" href="https://www.facebook.com/renchu.song" target="blank" style="float:left;"><img src="./content/facebook.png"></a>
 		            	</div>
 			            <div class="clear"></div>
 			            <h2><strong>Hi, I'm Renchu Song.</strong></h2>
@@ -140,17 +140,48 @@
 
 		        <div style="height:40px;"></div>
 			    <div style="clear:both;"></div>
+			   
+			   	<!-- BOX! -->
 			    <div class="col-md-4 animated flipInY">
 			    	<div class="grid mask">
-						<figure>
-							<a href="./projects.html#box"><img class="img-responsive" src="./content/projects/cover-box.png" alt=""></a>
-							<figcaption>
-								<h5>BOX! Spatial-Reasoning Platformer Game</h5>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
+			    		<a href="./projects.html#box">
+							<figure>
+								<img class="img-responsive" src="./content/projects/cover-box.png" alt="">
+								<figcaption>
+									<h5>BOX! Spatial-Reasoning Platformer Game</h5>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+						</a>
 			    	</div><!-- /grid-mask -->
 				</div>
 
+				<!-- Charted -->
+				<div class="col-md-4 animated flipInY">
+			    	<div class="grid mask">
+			    		<a href="./projects.html#charted">
+							<figure>
+								<img class="img-responsive" src="./content/projects/cover-charted.png" alt="">
+								<figcaption>
+									<h5>Google Dart Charted Library</h5>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+						</a>
+			    	</div><!-- /grid-mask -->
+				</div>
+
+				<!-- tMap -->
+				<div class="col-md-4 animated flipInY">
+			    	<div class="grid mask">
+			    		<a href="./projects.html#tmap">
+							<figure>
+								<img class="img-responsive" src="./content/projects/cover-tmap.png" alt="">
+								<figcaption>
+									<h5>tMap Indoor Navigation System</h5>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+						</a>
+			    	</div><!-- /grid-mask -->
+				</div>
 
 		    </div>
 	        
@@ -164,7 +195,9 @@
 
         <div class="row section" id="resume" style="padding-top: 8%; background: #f47e94; min-height: 360px;">
         	<div class="col-xs-12 outer" style="text-align:center" id="resume-container">
-		        <a href="javascript:showResume()" style="text-decoration: none;"><h2><strong class="btn-border" style="padding: 5px 20px 5px 20px; border-radius: 12px;" >View my resume</strong></h2></a>
+        		<div id="btn-show-resume-holder">
+			        <a href="javascript:showResume()" style="text-decoration: none;" id="btn-show-resume"><h2><strong class="btn-border" style="padding: 5px 20px 5px 20px; border-radius: 12px;" >View my resume</strong></h2></a>
+			    </div>
 		        <div style="height:20px;"></div>
 		        <div id="resume-box" style="overflow:hidden;display:none;padding-bottom:50px; max-width:800px; margin-left:auto; margin-right:auto;"><img class="img-responsive" src="./content/resume.png" style="border-radius: 5px;"></div>
 	        </div>
@@ -172,6 +205,14 @@
 	        	function showResume() {
 	        		$('#resume-box').slideToggle(1000);
 	        	}
+
+	        	$('#btn-show-resume').mouseover(function() {
+	        		$('#btn-show-resume-holder').addClass('animated').addClass('pulse');
+	        	});
+	        	
+	        	$('#btn-show-resume').mouseout(function() {
+	        		$('#btn-show-resume-holder').removeClass('animated').removeClass('pulse');
+	        	});
 	        </script>
         </div>
 
