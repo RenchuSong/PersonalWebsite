@@ -134,7 +134,7 @@
 
         <div class="row section" id="projects" style="padding-top: 4%; background: #35a8a1; min-height: 360px;">
         	<div class="container">
-				<div class="col-xs-12 animated bounceInLeft" style="text-align:center">
+				<div class="col-xs-12 outer" style="text-align:center" id="project-title">
 			        <h3 class="text-info" style="margin-top:0px; color:white">Here are some of the projects I worked on.</h3>
 		        </div>
 
@@ -142,7 +142,7 @@
 			    <div style="clear:both;"></div>
 			   
 			   	<!-- BOX! -->
-			    <div class="col-md-4 animated flipInY">
+			    <div class="col-md-4 outer project-small-intro">
 			    	<div class="grid mask">
 			    		<a href="./projects.html#box" style="cursor: pointer; cursor: hand;">
 							<figure>
@@ -156,7 +156,7 @@
 				</div>
 
 				<!-- Charted -->
-				<div class="col-md-4 animated flipInY">
+				<div class="col-md-4 outer project-small-intro">
 			    	<div class="grid mask">
 			    		<a href="./projects.html#charted" style="cursor: pointer; cursor: hand;">
 							<figure>
@@ -170,7 +170,7 @@
 				</div>
 
 				<!-- tMap -->
-				<div class="col-md-4 animated flipInY">
+				<div class="col-md-4 outer project-small-intro">
 			    	<div class="grid mask">
 			    		<a href="./projects.html#tmap" style="cursor: pointer; cursor: hand;">
 							<figure>
@@ -183,8 +183,22 @@
 			    	</div><!-- /grid-mask -->
 				</div>
 
+				<!-- dMap -->
+				<div class="col-md-4 outer project-small-intro">
+			    	<div class="grid mask">
+			    		<a href="./projects.html#dmap" style="cursor: pointer; cursor: hand;">
+							<figure>
+								<img class="img-responsive" src="./content/projects/cover-dmap.png" alt="">
+								<figcaption>
+									<h5>dMap Room-Based SNS Website</h5>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+						</a>
+			    	</div><!-- /grid-mask -->
+				</div>
+
 				<!-- Conservation -->
-				<div class="col-md-4 animated flipInY">
+				<div class="col-md-4 outer project-small-intro">
 			    	<div class="grid mask">
 			    		<a href="./projects.html#conservation" style="cursor: pointer; cursor: hand;">
 							<figure>
@@ -198,7 +212,7 @@
 				</div>
 
 				<!-- TimeBar -->
-				<div class="col-md-4 animated flipInY">
+				<div class="col-md-4 outer project-small-intro">
 			    	<div class="grid mask">
 			    		<a href="./projects.html#timebar" style="cursor: pointer; cursor: hand;">
 							<figure>
@@ -293,6 +307,12 @@
                 }
                 else if(height > ($('#projects').offset().top-($(window).height()/2))) {
           			$('#projsNav').addClass('btn-primary').addClass('active');
+          			$.each(
+		        		$(".project-small-intro"), function(key, value) {
+		        			$(value).removeClass('outer').addClass('animated').addClass('flipInY').addClass('delayp' + (key % 10));
+		        		}
+		        	);
+          			$('#project-title').removeClass('outer').addClass('animated').addClass('bounceInLeft');
                 }
                 else {
 	                $('#homeNav').addClass('btn-primary').addClass('active');
