@@ -294,11 +294,12 @@
 			        <a href="javascript:showResume()" style="text-decoration: none;" id="btn-show-resume"><h2><strong class="btn-border" style="padding: 5px 20px 5px 20px; border-radius: 12px;" >View my resume</strong></h2></a>
 			    </div>
 		        <div style="height:20px;"></div>
-		        <div id="resume-box" style="overflow:hidden;display:none;padding-bottom:50px; max-width:800px; margin-left:auto; margin-right:auto;"><img class="img-responsive" src="./content/resume.png" style="border-radius: 5px;"></div>
+		        <div id="resume-box" style="overflow:hidden;display:none;padding-bottom:50px; max-width:800px; margin-left:auto; margin-right:auto;"></div>
 	        </div>
 	        <script>
 	        	function showResume() {
 	        		$('#resume-box').slideToggle(1000);
+	        		$('#resume-box').html('<img class="img-responsive" src="./content/resume.png" style="border-radius: 5px;">');
 	        	}
 
 	        	$('#btn-show-resume').mouseover(function() {
