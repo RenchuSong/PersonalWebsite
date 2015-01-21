@@ -400,7 +400,13 @@
         		<div style="position:relative;height:0;" id="auchor-for-experience-2">
 		        	<div class="experience-time" id="experience-time-2">MAY 14</div>
 	        	</div>
-        		<div class="experience-container" style="height:400px;"></div>
+        		<div class="experience-container" style="height:400px;">
+					<h4>Internship at Google as a frontend engineer.</h4>
+        			<div id="googleplex-container" class="col-md-6"></div>
+        			<div id="noogler-container" class="col-md-6"></div>
+	        		<div id="android-container" class="col-md-6"></div>
+        			<div class="col-md-4 map-container" id="map-container-2" style="height:250px;max-width:400px;"></div>
+        		</div>
         		<div class="clear"></div>
         	</div>
 
@@ -533,11 +539,15 @@
         	var experienceData = [
         		{
         			'img' : ['mtv'],
-        			'map' : [-122.081267,37.4038194, 'Mountain View, CA'],
+        			'map' : [-122.081267,37.4038194, 'GraphSQL Inc', 8],
         		},
         		{
         			'img' : ['cornell', 'tower', 'gates'],
-        			'map' : [-76.4976751, 42.4496725, 'Cornell University'],
+        			'map' : [-76.4976751, 42.4496725, 'Cornell University', 13],
+        		},
+        		{
+        			'img' : ['googleplex', 'android', 'noogler'],
+        			'map' : [-122.084058, 37.422, 'Google Inc', 13],
         		},
 
         	];
@@ -563,14 +573,14 @@
 		            }
 	            }
 
-	            for (var i = 1; i >= 0; i--) {
+	            for (var i = 2; i >= 0; i--) {
 		            if (height > $('#experience-' + i).offset().top - $(window).height()) {
 		            	if (!experienceLoad[i]) {
 		            		experienceLoad[i] = true;
 		            		for (var j = 0; j < experienceData[i]['img'].length; j++) {	        
 								$("#" + experienceData[i]['img'][j] + "-container").html('<img class="img-responsive experience-img" src="./content/experiences/' + experienceData[i]['img'][j] + '.jpg">');
 							}
-							var mapContainer0 = L.mapbox.map('map-container-' + i, 'songrenchu.l0ejennp').setView([experienceData[i]['map'][1],experienceData[i]['map'][0]],12);
+							var mapContainer0 = L.mapbox.map('map-container-' + i, 'songrenchu.l0ejennp').setView([experienceData[i]['map'][1],experienceData[i]['map'][0]],experienceData[i]['map'][3]);
 
 				            L.mapbox.featureLayer({
 				                type: 'Feature',
