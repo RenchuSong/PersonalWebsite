@@ -382,20 +382,7 @@
 	        		<div class="col-md-4 map-container" id="map-container-0" style="height:250px;max-width:400px;"></div>
 	        		<script>
 		              L.mapbox.accessToken = 'pk.eyJ1Ijoic29uZ3JlbmNodSIsImEiOiIxcnItZkhvIn0.-3Ye_B9i_CdXfy--NDJJiA';
-		              var mapContainer0 = L.mapbox.map('map-container-0', 'chalob.i1khk0i2').setView([37.4038194,-122.081267],10);
-
-		              L.mapbox.featureLayer({
-		                  type: 'Feature',
-		                  geometry: {
-		                      type: 'Point',
-		                      coordinates: [-122.081267,37.4038194]
-		                  },
-		                  properties: {
-		                      title: 'Mountain View, CA',
-		                      'marker-color': '#EE5F35',
-		                      'marker-size': 'medium',
-		                  }
-		              }).addTo(mapContainer0).openPopup();
+		              
 		            </script>
         		</div>
         		<div class="clear"></div>
@@ -529,6 +516,8 @@
         		
         	});
 
+        	var experienceLoad = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,];
+
         	// Control highlight of navbar
       	    $(window).scroll(function() {
                 var height = $(window).scrollTop();
@@ -550,8 +539,26 @@
 		            }
 	            }
 
+	            // else
 	            if (height > $('#experience-0').offset().top - $(window).height()) {
-					$("#mtv-container").html('<img class="img-responsive experience-img" src="./content/experiences/mtv.jpg">');
+	            	if (!experienceLoad[0]) {
+	            		experienceLoad[0] = true;
+						$("#mtv-container").html('<img class="img-responsive experience-img" src="./content/experiences/mtv.jpg">');
+						var mapContainer0 = L.mapbox.map('map-container-0', 'chalob.i1khk0i2').setView([37.4038194,-122.081267],10);
+
+			            L.mapbox.featureLayer({
+			                type: 'Feature',
+			                geometry: {
+			                    type: 'Point',
+			                    coordinates: [-122.081267,37.4038194]
+			                },
+			                properties: {
+			                    title: 'Mountain View, CA',
+			                    'marker-color': '#EE5F35',
+			                    'marker-size': 'medium',
+			                }
+			            }).addTo(mapContainer0).openPopup();
+			        }
 	            }
 
                 if(height > ($('#mydream').offset().top-($(window).height()/2))) {
