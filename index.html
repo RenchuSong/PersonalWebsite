@@ -485,6 +485,7 @@
         		<div class="clear"></div>
         	</div>
 
+        	<!-- FIFA2011 -->
         	<div style="margin-top:50px;" id="experience-8">
         		<div style="position:relative;height:0;" id="auchor-for-experience-8">
 		        	<div class="experience-time" id="experience-time-8">APR 11</div>
@@ -499,6 +500,7 @@
         		<div class="clear"></div>
         	</div>
 
+        	<!-- Fudan University -->
         	<div style="margin-top:50px;" id="experience-9">
         		<div style="position:relative;height:0;" id="auchor-for-experience-9">
 		        	<div class="experience-time" id="experience-time-9">SEP 10</div>
@@ -511,11 +513,16 @@
         		<div class="clear"></div>
         	</div>
 
+        	<!-- NOI2009 -->
         	<div style="margin-top:50px;" id="experience-10">
         		<div style="position:relative;height:0;" id="auchor-for-experience-10">
 		        	<div class="experience-time" id="experience-time-10">JUL 09</div>
 	        	</div>
-        		<div class="experience-container" style="height:1400px;"></div>
+        		<div class="experience-container">
+        			<h4>Participated in NOI2009, a national wide programming contest. Experienced the biggest failure so far in my life.</h4>
+        			<div id="noi-container" class="col-md-6"></div>
+        			<div class="col-md-4 map-container" id="map-container-10" style="height:250px;max-width:400px;"></div>
+        		</div>
         		<div class="clear"></div>
         	</div>
         	
@@ -622,7 +629,10 @@
         			'img' : ['fudan'],
         			'map' : [121.501618, 31.29972, 'Fudan University', 15],
         		},
-        			
+        		{
+        			'img' : ['noi'],
+        			'map' : [116.475458, 40.01099, '80th High School, Beijing', 8],
+        		},	
         	];
 
         	// Control highlight of navbar
@@ -646,7 +656,7 @@
 		            }
 	            }
 
-	            for (var i = 9; i >= 0; i--) {
+	            for (var i = 10; i >= 0; i--) {
 		            if (height > $('#experience-' + i).offset().top - $(window).height()) {
 		            	if (!experienceLoad[i]) {
 		            		experienceLoad[i] = true;
