@@ -442,7 +442,13 @@
         		<div style="position:relative;height:0;" id="auchor-for-experience-5">
 		        	<div class="experience-time" id="experience-time-5">OCT 13</div>
 	        	</div>
-        		<div class="experience-container" style="height:1400px;"></div>
+        		<div class="experience-container">
+        			<h4>Attended CNCC2013 at Changsha, China. Awarded CCF Outstanding Undergraduate.</h4>
+        			<div id="cncc-container" class="col-md-6"></div>
+        			<div id="gfkd-container" class="col-md-6"></div>
+	        		<div id="ccfaward-container" class="col-md-6"></div>
+        			<div class="col-md-4 map-container" id="map-container-5" style="height:250px;max-width:400px;"></div>
+        		</div>
         		<div class="clear"></div>
         	</div>
         	
@@ -569,6 +575,11 @@
         			'img' : ['cup2013', 'spatial2013', 'disney'],
         			'map' : [-81.36875, 28.4811689, 'Orlando, FL', 6],
         		},
+        		{
+        			'img' : ['cncc', 'gfkd', 'ccfaward'],
+        			'map' : [113.0245972, 28.1761294, 'Changsha, China', 5],
+        		},
+        			
         	];
 
         	// Control highlight of navbar
@@ -592,7 +603,7 @@
 		            }
 	            }
 
-	            for (var i = 4; i >= 0; i--) {
+	            for (var i = 5; i >= 0; i--) {
 		            if (height > $('#experience-' + i).offset().top - $(window).height()) {
 		            	if (!experienceLoad[i]) {
 		            		experienceLoad[i] = true;
