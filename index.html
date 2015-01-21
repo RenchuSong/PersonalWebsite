@@ -428,7 +428,13 @@
         		<div style="position:relative;height:0;" id="auchor-for-experience-4">
 		        	<div class="experience-time" id="experience-time-4">NOV 13</div>
 	        	</div>
-        		<div class="experience-container" style="height:1400px;"></div>
+        		<div class="experience-container">
+        			<h4>Won 3rd place of ACM SIGSPATIAL Cup 2013, and give a presentation on ACM SIGSPATIAL 2013, Orlando, FL.</h4>
+        			<div id="cup2013-container" class="col-md-6"></div>
+        			<div id="spatial2013-container" class="col-md-6"></div>
+	        		<div id="disney-container" class="col-md-6"></div>
+        			<div class="col-md-4 map-container" id="map-container-4" style="height:250px;max-width:400px;"></div>
+        		</div>
         		<div class="clear"></div>
         	</div>
 
@@ -559,6 +565,10 @@
         			'img' : ['tmap_honor', 'tmap_pre', 'tmap_team'],
         			'map' : [121.598502, 31.191637, 'Fudan University Zhangjiang Campus', 10],
         		},
+        		{
+        			'img' : ['cup2013', 'spatial2013', 'disney'],
+        			'map' : [-81.36875, 28.4811689, 'Orlando, FL', 6],
+        		},
         	];
 
         	// Control highlight of navbar
@@ -582,7 +592,7 @@
 		            }
 	            }
 
-	            for (var i = 3; i >= 0; i--) {
+	            for (var i = 4; i >= 0; i--) {
 		            if (height > $('#experience-' + i).offset().top - $(window).height()) {
 		            	if (!experienceLoad[i]) {
 		            		experienceLoad[i] = true;
