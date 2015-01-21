@@ -527,7 +527,7 @@
         	</div>
         	
         	<div style="height:0;margin-top:50px;background-color:#dddddd" id="experience-11"></div>
-        	
+
         </div>
         <div class="clear"></div>
         <div class="row section" id="resume" style="padding-top: 8%; background: #f47e94; min-height: 360px;">
@@ -574,6 +574,8 @@
         </div>
 
         <script>
+        	var experienceHeight = $('#experiences').height();
+
 		    L.mapbox.accessToken = 'pk.eyJ1Ijoic29uZ3JlbmNodSIsImEiOiIxcnItZkhvIn0.-3Ye_B9i_CdXfy--NDJJiA';
 
         	// Construct email from script to avoid spamer.
@@ -638,6 +640,11 @@
 
         	// Control highlight of navbar
       	    $(window).scroll(function() {
+      	    	// Hack to make the height of experience be highest.
+      	    	if (experienceHeight < $('#experiences').height()) {
+      	    		experienceHeight = $('#experiences').height();
+      	    		$('#experiences').css('height', experienceHeight);
+      	    	}
                 var height = $(window).scrollTop();
                 $('#nav').find('a').removeClass('btn-primary').removeClass('active');
                 
