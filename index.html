@@ -414,7 +414,13 @@
         		<div style="position:relative;height:0;" id="auchor-for-experience-3">
 		        	<div class="experience-time" id="experience-time-3">MAR 14</div>
 	        	</div>
-        		<div class="experience-container" style="height:400px;"></div>
+        		<div class="experience-container" style="height:400px;">
+        			<h4>Indoor Navigation project tMap won Special Award at iShamrock Software Competition 2014.</h4>
+        			<div id="tmap_honor-container" class="col-md-6"></div>
+        			<div id="tmap_pre-container" class="col-md-6"></div>
+	        		<div id="tmap_team-container" class="col-md-6"></div>
+        			<div class="col-md-4 map-container" id="map-container-3" style="height:250px;max-width:400px;"></div>
+        		</div>
         		<div class="clear"></div>
         	</div>
 
@@ -547,9 +553,12 @@
         		},
         		{
         			'img' : ['googleplex', 'android', 'noogler'],
-        			'map' : [-122.084058, 37.422, 'Google Inc', 13],
+        			'map' : [-122.084058, 37.422, 'Google Inc', 10],
         		},
-
+        		{
+        			'img' : ['tmap_honor', 'tmap_pre', 'tmap_team'],
+        			'map' : [121.598502, 31.191637, 'Fudan University Zhangjiang Campus', 10],
+        		},
         	];
 
         	// Control highlight of navbar
@@ -573,7 +582,7 @@
 		            }
 	            }
 
-	            for (var i = 2; i >= 0; i--) {
+	            for (var i = 3; i >= 0; i--) {
 		            if (height > $('#experience-' + i).offset().top - $(window).height()) {
 		            	if (!experienceLoad[i]) {
 		            		experienceLoad[i] = true;
