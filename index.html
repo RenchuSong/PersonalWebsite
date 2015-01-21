@@ -14,7 +14,7 @@
         <link href="./dist/css/bootstrap.css" rel="stylesheet" media="screen">
         <link href="./css/bootswatch.css" rel="stylesheet" media="screen">
         <link href="./css/animate.css" rel="stylesheet" media="screen">
-        <link href="./css/mapbox.css" rel="stylesheet">
+        <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
         <link href="./css/incontent.css" rel="stylesheet">
         <link href="./css/figure.css" rel="stylesheet">
         
@@ -22,7 +22,7 @@
 		<link href="./css/delay.css" rel="stylesheet">
 
 
-        <script src="https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
         <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="./dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="./js/bootswatch.js"></script>
@@ -63,6 +63,12 @@
             
             .col-md-4 {
             	margin-top: 20px;
+            }
+
+            .col-md-6 {
+            	padding-left: 0;
+            	margin-top: 20px;
+            	max-width: 500px;
             }
 
             #resume-container a:focus, #resume-container a:hover {
@@ -109,7 +115,14 @@
 			.experience-container {
 				margin-left: 150px;
 				padding: 0 20px 0 20px;
-				background-color: #dddddd;
+			}
+
+			.experience-img, .map-container {
+				border-radius:5px;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+			}
+
+			.map-container div {
+				color: #000000;
 			}
         </style>
 
@@ -356,14 +369,39 @@
         		<div id="experience-timeline-bar" style="background-color:#D73425; z-index:1; width:10px;margin-left:95px;box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);"></div>
         	</div>
 
+        	<!-- Work At GraphSQL -->
         	<div style="margin-top:80px;" id="experience-0">
         		<div style="position:relative;height:0;" id="auchor-for-experience-0">
 		        	<div class="experience-time" id="experience-time-0" style="background-color:#999999;opacity:0.7;">JUN 15</div>
 	        	</div>
-        		<div class="experience-container" style="height:700px;"></div>
+        		<div class="experience-container">
+        			<h4>I will work as a Software Engineer at Bay Area.</h4>
+        			<div id="mtv-container" class="col-md-6">
+        				
+        			</div>
+	        		<div class="col-md-4 map-container" id="map-container-0" style="height:250px;max-width:400px;"></div>
+	        		<script>
+		              L.mapbox.accessToken = 'pk.eyJ1Ijoic29uZ3JlbmNodSIsImEiOiIxcnItZkhvIn0.-3Ye_B9i_CdXfy--NDJJiA';
+		              var mapContainer0 = L.mapbox.map('map-container-0', 'chalob.i1khk0i2').setView([37.4038194,-122.081267],10);
+
+		              L.mapbox.featureLayer({
+		                  type: 'Feature',
+		                  geometry: {
+		                      type: 'Point',
+		                      coordinates: [-122.081267,37.4038194]
+		                  },
+		                  properties: {
+		                      title: 'Mountain View, CA',
+		                      'marker-color': '#EE5F35',
+		                      'marker-size': 'medium',
+		                  }
+		              }).addTo(mapContainer0).openPopup();
+		            </script>
+        		</div>
+        		<div class="clear"></div>
         	</div>
 
-        	<div style="margin-top:80px;" id="experience-1">
+        	<div style="margin-top:50px;" id="experience-1">
         		<div style="position:relative;height:0;" id="auchor-for-experience-1">
 		        	<div class="experience-time" id="experience-time-1">AUG 14</div>
 	        	</div>
@@ -379,54 +417,61 @@
 
         	<div style="margin-top:50px;" id="experience-3">
         		<div style="position:relative;height:0;" id="auchor-for-experience-3">
-		        	<div class="experience-time" id="experience-time-3">NOV 13</div>
+		        	<div class="experience-time" id="experience-time-3">MAR 14</div>
 	        	</div>
-        		<div class="experience-container" style="height:1400px;"></div>
+        		<div class="experience-container" style="height:400px;"></div>
         	</div>
 
         	<div style="margin-top:50px;" id="experience-4">
         		<div style="position:relative;height:0;" id="auchor-for-experience-4">
-		        	<div class="experience-time" id="experience-time-4">OCT 13</div>
-	        	</div>
-        		<div class="experience-container" style="height:1400px;"></div>
-        	</div>
-        	
-        	<div style="margin-top:50px;" id="experience-5">
-        		<div style="position:relative;height:0;" id="auchor-for-experience-5">
-		        	<div class="experience-time" id="experience-time-5">AUG 13</div>
+		        	<div class="experience-time" id="experience-time-4">NOV 13</div>
 	        	</div>
         		<div class="experience-container" style="height:1400px;"></div>
         	</div>
 
+        	<div style="margin-top:50px;" id="experience-5">
+        		<div style="position:relative;height:0;" id="auchor-for-experience-5">
+		        	<div class="experience-time" id="experience-time-5">OCT 13</div>
+	        	</div>
+        		<div class="experience-container" style="height:1400px;"></div>
+        	</div>
+        	
         	<div style="margin-top:50px;" id="experience-6">
         		<div style="position:relative;height:0;" id="auchor-for-experience-6">
-		        	<div class="experience-time" id="experience-time-6">NOV 12</div>
+		        	<div class="experience-time" id="experience-time-6">AUG 13</div>
 	        	</div>
         		<div class="experience-container" style="height:1400px;"></div>
         	</div>
 
         	<div style="margin-top:50px;" id="experience-7">
         		<div style="position:relative;height:0;" id="auchor-for-experience-7">
-		        	<div class="experience-time" id="experience-time-7">APR 11</div>
+		        	<div class="experience-time" id="experience-time-7">NOV 12</div>
 	        	</div>
         		<div class="experience-container" style="height:1400px;"></div>
         	</div>
 
         	<div style="margin-top:50px;" id="experience-8">
         		<div style="position:relative;height:0;" id="auchor-for-experience-8">
-		        	<div class="experience-time" id="experience-time-8">SEP 10</div>
+		        	<div class="experience-time" id="experience-time-8">APR 11</div>
 	        	</div>
         		<div class="experience-container" style="height:1400px;"></div>
         	</div>
 
         	<div style="margin-top:50px;" id="experience-9">
         		<div style="position:relative;height:0;" id="auchor-for-experience-9">
-		        	<div class="experience-time" id="experience-time-9">JUL 09</div>
+		        	<div class="experience-time" id="experience-time-9">SEP 10</div>
+	        	</div>
+        		<div class="experience-container" style="height:1400px;"></div>
+        	</div>
+
+        	<div style="margin-top:50px;" id="experience-10">
+        		<div style="position:relative;height:0;" id="auchor-for-experience-10">
+		        	<div class="experience-time" id="experience-time-10">JUL 09</div>
 	        	</div>
         		<div class="experience-container" style="height:1400px;"></div>
         	</div>
         	
-        	<div style="height:0;margin-top:50px;background-color:#dddddd" id="experience-10"></div>
+        	<div style="height:0;margin-top:50px;background-color:#dddddd" id="experience-11"></div>
         </div>
 
         <div class="row section" id="resume" style="padding-top: 8%; background: #f47e94; min-height: 360px;">
@@ -492,12 +537,10 @@
                 // Control the position of timeline bar
                 $('#experience-timeline-bar').css('height', $('#experiences').height() - 130);
 
-                var currentExperience = 0;
 	            // Control the position of timeline times
 	            for (var i = 0; i <= 10; i++) {
 	            	if(height > $('#auchor-for-experience-' + i).offset().top - 50 && height < $('#experience-' + (i + 1)).offset().top - 200){
 		                $("#experience-time-" + i).addClass('fixed').removeClass('bottomed');
-		                currentExperience = i;
 		            } else if (height > $('#experience-' + (i + 1)).offset().top - 200) {
 		            	$("#auchor-for-experience-" + i).css("top", $("#experience-" + i).height());
 		            	$("#experience-time-" + i).addClass('bottomed').removeClass('fixed');
@@ -505,6 +548,10 @@
 		            	$("#auchor-for-experience-" + i).css("top", 0);
 		            	$("#experience-time-" + i).removeClass('fixed').removeClass('bottomed');
 		            }
+	            }
+
+	            if (height > $('#experience-0').offset().top - $(window).height()) {
+					$("#mtv-container").html('<img class="img-responsive experience-img" src="./content/experiences/mtv.jpg">');
 	            }
 
                 if(height > ($('#mydream').offset().top-($(window).height()/2))) {
