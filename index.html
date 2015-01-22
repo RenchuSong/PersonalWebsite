@@ -154,7 +154,8 @@
 		            </ul>
 		            <script>
 			            function scrollTo(element) {
-			                $('html,body').animate({scrollTop: $('#' + element).offset().top - 42}, 700);
+			            	var height = $(window).scrollTop();
+			                $('html,body').animate({scrollTop: $('#' + element).offset().top - 42}, {easing: "linear",duration: Math.abs(height - ($('#' + element).offset().top - 42)) / 1.5});
 			            }
 		            </script>
 		        </div>
