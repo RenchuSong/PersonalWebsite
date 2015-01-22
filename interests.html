@@ -187,9 +187,66 @@
 
         <!-- Traveling -->
         <a id="travel"></a>
-        <div class="row section" style="padding-top: 8%; background: #f1c410; min-height: 360px;">
-            
-            
+        <div class="row section" style="padding-top: 8%; background: #f1c410; min-height: 360px; text-align:center;">
+            <div class="col-xs-12" style="text-align:center" id="interest-title">
+                <h3 class="text-info" style="margin-top:0px; color:white">This map shows my footsteps. I am always exploring more.</h3>
+            </div>
+            <div class="col-xs-12" style="padding:20px;">
+                <div class="map-container" id="map-container" style="width:80%; height:400px; margin-left:auto; margin-right:auto;"></div>
+            </div>
+            <script>
+
+                L.mapbox.accessToken = 'pk.eyJ1Ijoic29uZ3JlbmNodSIsImEiOiIxcnItZkhvIn0.-3Ye_B9i_CdXfy--NDJJiA';
+
+                var mapContainer = L.mapbox.map('map-container', 'songrenchu.l0ejennp').setView([30, 0], 2);
+
+                var coordinates = [
+                    // China
+                    [39.6258709,118.1837082], // Tangshan
+                    [39.9388838,116.3974589], // Beijing
+                    [39.1250317,117.2955322], // Tianjin
+                    [39.9426013,119.6016312], // Qinhuangdao
+                    [40.9867212,117.9454422], // Chengde
+                    [38.043587,114.5043182], // Shijiazhuang
+                    [38.8710327,115.4753906], // Baoding
+                    [34.2593804,108.9672088], // Xi'an
+                    [31.3283482,120.6443024], // Suzhou
+                    [30.2613905,120.1718902], // Hangzhou
+                    [31.5702698,120.3126526], // Wuxi
+                    [32.0992691,118.7377506], // Nanjing
+                    [41.1161684,123.0063629], // Anshan
+                    [40.7525388,120.8485794], // Huludao
+                    [28.1761294,113.0245972], // Changsha
+                    [23.1255978,113.2278442], // Guangzhou
+                    [22.5551603,114.0538788], // Shenzhen
+                    [31.2243489,121.4767528], // Shanghai
+                    [29.9929493,120.5876863], // Shaoxing
+                    
+
+                    // US
+                    [42.4422877,-76.4983749], // Ithaca
+                    [40.7033121,-73.979681], // New York
+                    [37.7577,-122.4376], // San Fransisco
+                    [37.4038194,-122.081267], // Mountain View
+                    [34.0204989,-118.41173], // Los Angeles
+                    [28.4811689,-81.36875], // Orlando
+                    [40.0047528,-75.1180329], // Philadelphia
+                ];
+
+                for (var i = 0; i < coordinates.length; i++) {
+                    L.mapbox.featureLayer({
+                        type: 'Feature',
+                        geometry: {
+                            type: 'Point',
+                            coordinates: [coordinates[i][1], coordinates[i][0]]
+                        },
+                        properties: {
+                            'marker-color': '#EE5F35',
+                            'marker-size': 'medium',
+                        }
+                    }).addTo(mapContainer).openPopup();
+                }
+            </script>
         </div>
         
 
