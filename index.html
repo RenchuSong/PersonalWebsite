@@ -19,7 +19,7 @@
         <link href="./css/figure.css" rel="stylesheet">
         
         <!-- Animation Delay, Not Sure Why Origianl Not Working -->
-		<link href="./css/delay.css" rel="stylesheet">
+        <link href="./css/delay.css" rel="stylesheet">
 
 
         <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
@@ -39,643 +39,643 @@
                 font-size:1.1em;
             }
             div, a, a:focus, p {
-            	color: #ffffff;
+                color: #ffffff;
             }
 
             a:hover {
-            	text-decoration: none;
-            	color: #ffff00;
+                text-decoration: none;
+                color: #ffff00;
             }
 
             a:focus, a:active {
-            	text-decoration: none;
+                text-decoration: none;
             }
 
             .clear {
-            	width:100%;
-            	clear:both;
+                width:100%;
+                clear:both;
             }
 
             .outer {
-            	position:relative;
-            	left:-1500px;
+                position:relative;
+                left:-1500px;
             }
             
             .col-md-4 {
-            	margin-top: 20px;
+                margin-top: 20px;
             }
 
             .col-md-6 {
-            	padding-left: 0;
-            	margin-top: 20px;
-            	max-width: 500px;
+                padding-left: 0;
+                margin-top: 20px;
+                max-width: 500px;
             }
 
             #resume-container a:focus, #resume-container a:hover {
-            	color:white;
+                color:white;
             }
 
             .btn-border {
-            	border: 4px solid white; 
+                border: 4px solid white; 
             }
 
             .contact-logo-float {
-            	position:absolute;
+                position:absolute;
             }
 
             #nav-bar-wrapper {
-			    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-			}
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+            }
 
-			.fixed {
-				position:fixed;
-				top:50px;
-			}
+            .fixed {
+                position:fixed;
+                top:50px;
+            }
 
-			.bottomed {
-				position: absolute;
-				left:0;
-				top:auto;
-				bottom:0;
-			}
+            .bottomed {
+                position: absolute;
+                left:0;
+                top:auto;
+                bottom:0;
+            }
 
-			.experience-time {
-				width:100px; 
-				height:100px; 
-				background-color:#F7952B; 
-				margin-left:50px;
-				z-index:10;
-				border-radius:50px;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-				padding:18px 20px 0 16px;
-				font-size: 24px;
-				text-align: center;
-				font-family: "Arial Black", Gadget, sans-serif;
-			}
+            .experience-time {
+                width:100px; 
+                height:100px; 
+                background-color:#F7952B; 
+                margin-left:50px;
+                z-index:10;
+                border-radius:50px;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+                padding:18px 20px 0 16px;
+                font-size: 24px;
+                text-align: center;
+                font-family: "Arial Black", Gadget, sans-serif;
+            }
 
-			.experience-container {
-				margin-left: 150px;
-				padding: 0 20px 0 20px;
-			}
+            .experience-container {
+                margin-left: 150px;
+                padding: 0 20px 0 20px;
+            }
 
-			.experience-img, .map-container {
-				border-radius:5px;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-			}
+            .experience-img, .map-container {
+                border-radius:5px;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+            }
 
-			.map-container div {
-				color: #000000;
-			}
+            .map-container div {
+                color: #000000;
+            }
 
-			a.interest-anchor {
-				display: block;
-				padding:20px;
-			}
-			a.interest-anchor:hover {
-				background-color: #F99704;
-				border-radius: 10px;
-			}
+            a.interest-anchor {
+                display: block;
+                padding:20px;
+            }
+            a.interest-anchor:hover {
+                background-color: #F99704;
+                border-radius: 10px;
+            }
         </style>
 
     </head>
 
     <body style="background: #6860d7;">
-	    <div class="navbar navbar-default navbar-fixed-top" style="background: #6860d7; border:0;" id="nav-bar-wrapper">
-	        <div class="container">
-		        <div class="navbar-header">
-		            <a href="javascript:void" class="navbar-brand" style="color:white">Renchu Song</a>
-		        </div>
-		        <div class="navbar-collapse collapse" id="navbar-main">
-		            <ul class="nav navbar-nav navbar-right" id="nav">
-			            <li><a href="javascript:void" onclick="scrollTo('intro')" class="active" id="homeNav">About Me</a></li>
-			            <li><a href="javascript:void" onclick="scrollTo('projects')" class="" id="projsNav">Projects</a></li>
-			            <li><a href="javascript:void" onclick="scrollTo('experiences')" class="" id="expsNav">Experiences</a></li>
-			            <li><a href="javascript:void" onclick="scrollTo('resume')" class="" id="resumeNav">Resume</a></li>
-			            <li><a href="javascript:void" onclick="scrollTo('mypast')" class="" id="pastNav">My Interests</a></li>
-			            <li><a href="javascript:void" onclick="scrollTo('mydream')" class="" id="dreamNav">My Dream</a></li>
-		            </ul>
-		            <script>
-			            function scrollTo(element) {
-			            	var height = $(window).scrollTop();
-			                $('html,body').animate({scrollTop: $('#' + element).offset().top - 42}, 1000);
-			            }
-		            </script>
-		        </div>
-	        </div>
-	    </div>
-	    <div style="height:42px;"></div>
+        <div class="navbar navbar-default navbar-fixed-top" style="background: #6860d7; border:0;" id="nav-bar-wrapper">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="javascript:void" class="navbar-brand" style="color:white">Renchu Song</a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav navbar-right" id="nav">
+                        <li><a href="javascript:void" onclick="scrollTo('intro')" class="active" id="homeNav">About Me</a></li>
+                        <li><a href="javascript:void" onclick="scrollTo('projects')" class="" id="projsNav">Projects</a></li>
+                        <li><a href="javascript:void" onclick="scrollTo('experiences')" class="" id="expsNav">Experiences</a></li>
+                        <li><a href="javascript:void" onclick="scrollTo('resume')" class="" id="resumeNav">Resume</a></li>
+                        <li><a href="javascript:void" onclick="scrollTo('mypast')" class="" id="pastNav">My Interests</a></li>
+                        <li><a href="javascript:void" onclick="scrollTo('mydream')" class="" id="dreamNav">My Dream</a></li>
+                    </ul>
+                    <script>
+                        function scrollTo(element) {
+                            var height = $(window).scrollTop();
+                            $('html,body').animate({scrollTop: $('#' + element).offset().top - 42}, 1000);
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div style="height:42px;"></div>
         <div class="row section" id="intro" style="padding-top: 8%; background: #1cabe3; min-height: 360px; margin:0;z-index:2;">
-        	<div class="container">
-		        <div class="col-lg-12" style="z-index:10;">
-		            <div class="col-xs-12 animated bounceInDown" style="text-align:center">
-		            	<div class="clear"></div>
-			            <div class="col-xs-12" style="z-index:15; pointer-events: none; margin-left:auto; margin-right:auto;">
-			            	<img src="./content/myphoto1.png">
-			            </div>
-			           
-			            <div class="clear"></div>
+            <div class="container">
+                <div class="col-lg-12" style="z-index:10;">
+                    <div class="col-xs-12 animated bounceInDown" style="text-align:center">
+                        <div class="clear"></div>
+                        <div class="col-xs-12" style="z-index:15; pointer-events: none; margin-left:auto; margin-right:auto;">
+                            <img src="./content/myphoto1.png">
+                        </div>
+                       
+                        <div class="clear"></div>
 
-				        <div class="col-xs-12" style="z-index:12">
-		            		<a class="contact-logo contact-logo-float animated rubberBand delayp5" href="http://www.songrenchu.com" target="blank" style="left:250px;top:-240px;" id="contact-website"><img src="./content/website.png"></a>
-		            		
-			            	<a class="contact-logo animated rubberBand delayp6 contact-logo-float" href="https://cn.linkedin.com/pub/renchu-song/47/992/a40" target="blank" style="left:250px;top:-100px;" id="contact-linkedin"><img src="./content/linkedin.png"></a>
-			            	
-			            	<a class="contact-logo animated rubberBand delayp6 contact-logo-float" href="https://github.com/RenchuSong" target="blank" style="right:250px;top:-240px;" id="contact-github"><img src="./content/github.png"></a>
-			            	
-			            	<a class="contact-logo animated rubberBand delayp5 contact-logo-float" href="https://www.facebook.com/renchu.song" target="blank" style="right:250px;top:-100px;" id="contact-facebook"><img src="./content/facebook.png"></a>
-		            	</div>
-		            	
-		            	<div class="clear"></div>
+                        <div class="col-xs-12" style="z-index:12">
+                            <a class="contact-logo contact-logo-float animated rubberBand delayp5" href="http://www.songrenchu.com" target="blank" style="left:250px;top:-240px;" id="contact-website"><img src="./content/website.png"></a>
+                            
+                            <a class="contact-logo animated rubberBand delayp6 contact-logo-float" href="https://cn.linkedin.com/pub/renchu-song/47/992/a40" target="blank" style="left:250px;top:-100px;" id="contact-linkedin"><img src="./content/linkedin.png"></a>
+                            
+                            <a class="contact-logo animated rubberBand delayp6 contact-logo-float" href="https://github.com/RenchuSong" target="blank" style="right:250px;top:-240px;" id="contact-github"><img src="./content/github.png"></a>
+                            
+                            <a class="contact-logo animated rubberBand delayp5 contact-logo-float" href="https://www.facebook.com/renchu.song" target="blank" style="right:250px;top:-100px;" id="contact-facebook"><img src="./content/facebook.png"></a>
+                        </div>
+                        
+                        <div class="clear"></div>
 
-			            <h2><strong>Hi, I'm Renchu Song.</strong></h2>
-			            <h3 class="text-info" style="margin-top:0px; color:white">I'm a Software Developer.</h3>
-		            </div>
-		           
+                        <h2><strong>Hi, I'm Renchu Song.</strong></h2>
+                        <h3 class="text-info" style="margin-top:0px; color:white">I'm a Software Developer.</h3>
+                    </div>
+                   
 
-		        </div>
+                </div>
 
-		        <div class="col-lg-12 animated bounceInUp" style="text-align:center; margin-top:20px; z-index:5;">
-		        	<h4>
-			            <p>Currently, I am a M.Eng candidate in Computer Science at Cornell University, Ithaca, NY.</p>
-			            <p>I obtained my B.S. in Computer Science from Fudan University, China.</p>
-			        </h4>
-		        </div>
-		    </div>
+                <div class="col-lg-12 animated bounceInUp" style="text-align:center; margin-top:20px; z-index:5;">
+                    <h4>
+                        <p>Currently, I am a M.Eng candidate in Computer Science at Cornell University, Ithaca, NY.</p>
+                        <p>I obtained my B.S. in Computer Science from Fudan University, China.</p>
+                    </h4>
+                </div>
+            </div>
         </div>
 
         <div class="row section" id="projects" style="padding-top: 4%; background: #35a8a1; min-height: 360px;">
-        	<div class="container">
-				<div class="col-xs-12" style="text-align:center" id="project-title">
-			        <h3 class="text-info" style="margin-top:0px; color:white">Here are some of the projects I worked on.</h3>
-		        </div>
+            <div class="container">
+                <div class="col-xs-12" style="text-align:center" id="project-title">
+                    <h3 class="text-info" style="margin-top:0px; color:white">Here are some of the projects I worked on.</h3>
+                </div>
 
-		        <div style="height:40px;"></div>
-			    <div style="clear:both;"></div>
-			   
-			   	<!-- BOX! -->
-			    <div class="col-md-4 outer project-small-intro">
-			    	<div class="grid mask">
-			    		<a href="./projects.html#box" style="cursor: pointer; cursor: hand;">
-							<figure>
-								<img class="img-responsive" src="./content/projects/cover-box.png" alt="">
-								<figcaption>
-									<h5>BOX! Spatial-Reasoning Platformer Game</h5>
-								</figcaption><!-- /figcaption -->
-							</figure><!-- /figure -->
-						</a>
-			    	</div><!-- /grid-mask -->
-				</div>
+                <div style="height:40px;"></div>
+                <div style="clear:both;"></div>
+               
+                   <!-- BOX! -->
+                <div class="col-md-4 outer project-small-intro">
+                    <div class="grid mask">
+                        <a href="./projects.html#box" style="cursor: pointer; cursor: hand;">
+                            <figure>
+                                <img class="img-responsive" src="./content/projects/cover-box.png" alt="">
+                                <figcaption>
+                                    <h5>BOX! Spatial-Reasoning Platformer Game</h5>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </a>
+                    </div><!-- /grid-mask -->
+                </div>
 
-				<!-- Charted -->
-				<div class="col-md-4 outer project-small-intro">
-			    	<div class="grid mask">
-			    		<a href="./projects.html#charted" style="cursor: pointer; cursor: hand;">
-							<figure>
-								<img class="img-responsive" src="./content/projects/cover-charted.png" alt="">
-								<figcaption>
-									<h5>Google Dart Charted Library</h5>
-								</figcaption><!-- /figcaption -->
-							</figure><!-- /figure -->
-						</a>
-			    	</div><!-- /grid-mask -->
-				</div>
+                <!-- Charted -->
+                <div class="col-md-4 outer project-small-intro">
+                    <div class="grid mask">
+                        <a href="./projects.html#charted" style="cursor: pointer; cursor: hand;">
+                            <figure>
+                                <img class="img-responsive" src="./content/projects/cover-charted.png" alt="">
+                                <figcaption>
+                                    <h5>Google Dart Charted Library</h5>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </a>
+                    </div><!-- /grid-mask -->
+                </div>
 
-				<!-- tMap -->
-				<div class="col-md-4 outer project-small-intro">
-			    	<div class="grid mask">
-			    		<a href="./projects.html#tmap" style="cursor: pointer; cursor: hand;">
-							<figure>
-								<img class="img-responsive" src="./content/projects/cover-tmap.png" alt="">
-								<figcaption>
-									<h5>tMap Indoor Navigation System</h5>
-								</figcaption><!-- /figcaption -->
-							</figure><!-- /figure -->
-						</a>
-			    	</div><!-- /grid-mask -->
-				</div>
+                <!-- tMap -->
+                <div class="col-md-4 outer project-small-intro">
+                    <div class="grid mask">
+                        <a href="./projects.html#tmap" style="cursor: pointer; cursor: hand;">
+                            <figure>
+                                <img class="img-responsive" src="./content/projects/cover-tmap.png" alt="">
+                                <figcaption>
+                                    <h5>tMap Indoor Navigation System</h5>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </a>
+                    </div><!-- /grid-mask -->
+                </div>
 
-				<!-- dMap -->
-				<div class="col-md-4 outer project-small-intro">
-			    	<div class="grid mask">
-			    		<a href="./projects.html#dmap" style="cursor: pointer; cursor: hand;">
-							<figure>
-								<img class="img-responsive" src="./content/projects/cover-dmap.png" alt="">
-								<figcaption>
-									<h5>dMap Room-Based SNS Website</h5>
-								</figcaption><!-- /figcaption -->
-							</figure><!-- /figure -->
-						</a>
-			    	</div><!-- /grid-mask -->
-				</div>
+                <!-- dMap -->
+                <div class="col-md-4 outer project-small-intro">
+                    <div class="grid mask">
+                        <a href="./projects.html#dmap" style="cursor: pointer; cursor: hand;">
+                            <figure>
+                                <img class="img-responsive" src="./content/projects/cover-dmap.png" alt="">
+                                <figcaption>
+                                    <h5>dMap Room-Based SNS Website</h5>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </a>
+                    </div><!-- /grid-mask -->
+                </div>
 
-				<!-- Conservation -->
-				<div class="col-md-4 outer project-small-intro">
-			    	<div class="grid mask">
-			    		<a href="./projects.html#conservation" style="cursor: pointer; cursor: hand;">
-							<figure>
-								<img class="img-responsive" src="./content/projects/cover-conservation.png" alt="">
-								<figcaption>
-									<h5>Conservation SNS Desktop Client</h5>
-								</figcaption><!-- /figcaption -->
-							</figure><!-- /figure -->
-						</a>
-			    	</div><!-- /grid-mask -->
-				</div>
+                <!-- Conservation -->
+                <div class="col-md-4 outer project-small-intro">
+                    <div class="grid mask">
+                        <a href="./projects.html#conservation" style="cursor: pointer; cursor: hand;">
+                            <figure>
+                                <img class="img-responsive" src="./content/projects/cover-conservation.png" alt="">
+                                <figcaption>
+                                    <h5>Conservation SNS Desktop Client</h5>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </a>
+                    </div><!-- /grid-mask -->
+                </div>
 
-				<!-- FDUGroup -->
-				<div class="col-md-4 outer project-small-intro">
-			    	<div class="grid mask">
-			    		<a href="./projects.html#fdugroup" style="cursor: pointer; cursor: hand;">
-							<figure>
-								<img class="img-responsive" src="./content/projects/cover-fdugroup.png" alt="">
-								<figcaption>
-									<h5>FDUGroup Group Based SNS Website</h5>
-								</figcaption><!-- /figcaption -->
-							</figure><!-- /figure -->
-						</a>
-			    	</div><!-- /grid-mask -->
-				</div>
+                <!-- FDUGroup -->
+                <div class="col-md-4 outer project-small-intro">
+                    <div class="grid mask">
+                        <a href="./projects.html#fdugroup" style="cursor: pointer; cursor: hand;">
+                            <figure>
+                                <img class="img-responsive" src="./content/projects/cover-fdugroup.png" alt="">
+                                <figcaption>
+                                    <h5>FDUGroup Group Based SNS Website</h5>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </a>
+                    </div><!-- /grid-mask -->
+                </div>
 
-				<!-- TimeBar -->
-				<div class="col-md-4 outer project-small-intro">
-			    	<div class="grid mask">
-			    		<a href="./projects.html#timebar" style="cursor: pointer; cursor: hand;">
-							<figure>
-								<img class="img-responsive" src="./content/projects/cover-timebar.png" alt="">
-								<figcaption>
-									<h5>TimeBar Campus Event Platform</h5>
-								</figcaption><!-- /figcaption -->
-							</figure><!-- /figure -->
-						</a>
-			    	</div><!-- /grid-mask -->
-				</div>
+                <!-- TimeBar -->
+                <div class="col-md-4 outer project-small-intro">
+                    <div class="grid mask">
+                        <a href="./projects.html#timebar" style="cursor: pointer; cursor: hand;">
+                            <figure>
+                                <img class="img-responsive" src="./content/projects/cover-timebar.png" alt="">
+                                <figcaption>
+                                    <h5>TimeBar Campus Event Platform</h5>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </a>
+                    </div><!-- /grid-mask -->
+                </div>
 
-				<!-- PRESS -->
-				<div class="col-md-4 outer project-small-intro">
-			    	<div class="grid mask">
-			    		<a href="./projects.html#press" style="cursor: pointer; cursor: hand;">
-							<figure>
-								<img class="img-responsive" src="./content/projects/cover-press.png" alt="">
-								<figcaption>
-									<h5>Road Net Trajectory Compression Research</h5>
-								</figcaption><!-- /figcaption -->
-							</figure><!-- /figure -->
-						</a>
-			    	</div><!-- /grid-mask -->
-				</div>
+                <!-- PRESS -->
+                <div class="col-md-4 outer project-small-intro">
+                    <div class="grid mask">
+                        <a href="./projects.html#press" style="cursor: pointer; cursor: hand;">
+                            <figure>
+                                <img class="img-responsive" src="./content/projects/cover-press.png" alt="">
+                                <figcaption>
+                                    <h5>Road Net Trajectory Compression Research</h5>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </a>
+                    </div><!-- /grid-mask -->
+                </div>
 
-				<!-- Map Matching -->
-				<div class="col-md-4 outer project-small-intro">
-			    	<div class="grid mask">
-			    		<a href="./projects.html#mapmatching" style="cursor: pointer; cursor: hand;">
-							<figure>
-								<img class="img-responsive" src="./content/projects/cover-mapmatching.png" alt="">
-								<figcaption>
-									<h5>Map Matching Research</h5>
-								</figcaption><!-- /figcaption -->
-							</figure><!-- /figure -->
-						</a>
-			    	</div><!-- /grid-mask -->
-				</div>
+                <!-- Map Matching -->
+                <div class="col-md-4 outer project-small-intro">
+                    <div class="grid mask">
+                        <a href="./projects.html#mapmatching" style="cursor: pointer; cursor: hand;">
+                            <figure>
+                                <img class="img-responsive" src="./content/projects/cover-mapmatching.png" alt="">
+                                <figcaption>
+                                    <h5>Map Matching Research</h5>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </a>
+                    </div><!-- /grid-mask -->
+                </div>
 
-				<!-- Geo-Fencing -->
-				<div class="col-md-4 outer project-small-intro">
-			    	<div class="grid mask">
-			    		<a href="./projects.html#geofencing" style="cursor: pointer; cursor: hand;">
-							<figure>
-								<img class="img-responsive" src="./content/projects/cover-geofencing.png" alt="">
-								<figcaption>
-									<h5>Geo-Fencing Research</h5>
-								</figcaption><!-- /figcaption -->
-							</figure><!-- /figure -->
-						</a>
-			    	</div><!-- /grid-mask -->
-				</div>
+                <!-- Geo-Fencing -->
+                <div class="col-md-4 outer project-small-intro">
+                    <div class="grid mask">
+                        <a href="./projects.html#geofencing" style="cursor: pointer; cursor: hand;">
+                            <figure>
+                                <img class="img-responsive" src="./content/projects/cover-geofencing.png" alt="">
+                                <figcaption>
+                                    <h5>Geo-Fencing Research</h5>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </a>
+                    </div><!-- /grid-mask -->
+                </div>
 
-				<!-- Silica Dictionary -->
-				<div class="col-md-4 outer project-small-intro">
-			    	<div class="grid mask">
-			    		<a href="./projects.html#silica" style="cursor: pointer; cursor: hand;">
-							<figure>
-								<img class="img-responsive" src="./content/projects/cover-silica.png" alt="">
-								<figcaption>
-									<h5>Silica Intelligent Dictionary</h5>
-								</figcaption><!-- /figcaption -->
-							</figure><!-- /figure -->
-						</a>
-			    	</div><!-- /grid-mask -->
-				</div>
+                <!-- Silica Dictionary -->
+                <div class="col-md-4 outer project-small-intro">
+                    <div class="grid mask">
+                        <a href="./projects.html#silica" style="cursor: pointer; cursor: hand;">
+                            <figure>
+                                <img class="img-responsive" src="./content/projects/cover-silica.png" alt="">
+                                <figcaption>
+                                    <h5>Silica Intelligent Dictionary</h5>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </a>
+                    </div><!-- /grid-mask -->
+                </div>
 
-		    </div>
-	        
-	        <div style="height:60px;"></div>
-			
+            </div>
+            
+            <div style="height:60px;"></div>
+            
         </div>
 
         
         <div class="row section" id="experiences" style="padding-top: 4%; background: #ee5f35; min-height: 360px; overflow:hidden;">
-        	<div class="col-xs-12" style="text-align:center">
-			    <h3 class="text-info" style="margin-top:0px; color:white">Life is about experiencing different things.</h3>
-		    </div>
-        	<div style="position:relative;height:0;top:80px;" id="auchor-for-experience-timeline-bar">
-        		<div id="experience-timeline-bar" style="background-color:#D73425; z-index:1; width:10px;margin-left:95px;box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);"></div>
-        	</div>
+            <div class="col-xs-12" style="text-align:center">
+                <h3 class="text-info" style="margin-top:0px; color:white">Life is about experiencing different things.</h3>
+            </div>
+            <div style="position:relative;height:0;top:80px;" id="auchor-for-experience-timeline-bar">
+                <div id="experience-timeline-bar" style="background-color:#D73425; z-index:1; width:10px;margin-left:95px;box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);"></div>
+            </div>
 
-        	<!-- Work At GraphSQL -->
-        	<div style="margin-top:80px;" id="experience-0">
-        		<div style="position:relative;height:0;" id="auchor-for-experience-0">
-		        	<div class="experience-time" id="experience-time-0" style="background-color:#999999;opacity:0.7;">JUN 15</div>
-	        	</div>
-        		<div class="experience-container">
-        			<h4>I will work as a Software Engineer at Bay Area.</h4>
-        			<div id="mtv-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-	        		<div class="col-md-4 map-container" id="map-container-0" style="height:250px;max-width:400px;"></div>
-        		</div>
-        		<div class="clear"></div>
-        	</div>
+            <!-- Work At GraphSQL -->
+            <div style="margin-top:80px;" id="experience-0">
+                <div style="position:relative;height:0;" id="auchor-for-experience-0">
+                    <div class="experience-time" id="experience-time-0" style="background-color:#999999;opacity:0.7;">JUN 15</div>
+                </div>
+                <div class="experience-container">
+                    <h4>I will work as a Software Engineer at Bay Area.</h4>
+                    <div id="mtv-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div class="col-md-4 map-container" id="map-container-0" style="height:250px;max-width:400px;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
 
-        	<!-- Cornell -->
-        	<div style="margin-top:50px;" id="experience-1">
-        		<div style="position:relative;height:0;" id="auchor-for-experience-1">
-		        	<div class="experience-time" id="experience-time-1">AUG 14</div>
-	        	</div>
-        		<div class="experience-container">
-        			<h4>Started pursuing my M.Eng. degree at Cornell University.</h4>
-        			<div id="cornell-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div id="tower-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div id="gates-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-	        		<div class="col-md-4 map-container" id="map-container-1" style="height:250px;max-width:400px;"></div>
-        		</div>
-        		<div class="clear"></div>
-        	</div>
+            <!-- Cornell -->
+            <div style="margin-top:50px;" id="experience-1">
+                <div style="position:relative;height:0;" id="auchor-for-experience-1">
+                    <div class="experience-time" id="experience-time-1">AUG 14</div>
+                </div>
+                <div class="experience-container">
+                    <h4>Started pursuing my M.Eng. degree at Cornell University.</h4>
+                    <div id="cornell-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="tower-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="gates-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div class="col-md-4 map-container" id="map-container-1" style="height:250px;max-width:400px;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
 
-        	<!-- Google Intern -->
-        	<div style="margin-top:50px;" id="experience-2">
-        		<div style="position:relative;height:0;" id="auchor-for-experience-2">
-		        	<div class="experience-time" id="experience-time-2">MAY 14</div>
-	        	</div>
-        		<div class="experience-container">
-					<h4>Internship at Google as a frontend engineer.</h4>
-        			<div id="googleplex-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div id="noogler-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-	        		<div id="android-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div class="col-md-4 map-container" id="map-container-2" style="height:250px;max-width:400px;"></div>
-        		</div>
-        		<div class="clear"></div>
-        	</div>
+            <!-- Google Intern -->
+            <div style="margin-top:50px;" id="experience-2">
+                <div style="position:relative;height:0;" id="auchor-for-experience-2">
+                    <div class="experience-time" id="experience-time-2">MAY 14</div>
+                </div>
+                <div class="experience-container">
+                    <h4>Internship at Google as a frontend engineer.</h4>
+                    <div id="googleplex-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="noogler-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="android-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div class="col-md-4 map-container" id="map-container-2" style="height:250px;max-width:400px;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
 
-        	<!-- tMap -->
-        	<div style="margin-top:50px;" id="experience-3">
-        		<div style="position:relative;height:0;" id="auchor-for-experience-3">
-		        	<div class="experience-time" id="experience-time-3">MAR 14</div>
-	        	</div>
-        		<div class="experience-container">
-        			<h4>Indoor Navigation project tMap won Special Award at iShamrock Software Competition 2014.</h4>
-        			<div id="tmap_honor-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div id="tmap_pre-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-	        		<div id="tmap_team-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div class="col-md-4 map-container" id="map-container-3" style="height:250px;max-width:400px;"></div>
-        		</div>
-        		<div class="clear"></div>
-        	</div>
+            <!-- tMap -->
+            <div style="margin-top:50px;" id="experience-3">
+                <div style="position:relative;height:0;" id="auchor-for-experience-3">
+                    <div class="experience-time" id="experience-time-3">MAR 14</div>
+                </div>
+                <div class="experience-container">
+                    <h4>Indoor Navigation project tMap won Special Award at iShamrock Software Competition 2014.</h4>
+                    <div id="tmap_honor-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="tmap_pre-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="tmap_team-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div class="col-md-4 map-container" id="map-container-3" style="height:250px;max-width:400px;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
 
-        	<!-- SIGSPATIAL Cup 2013 -->
-        	<div style="margin-top:50px;" id="experience-4">
-        		<div style="position:relative;height:0;" id="auchor-for-experience-4">
-		        	<div class="experience-time" id="experience-time-4">NOV 13</div>
-	        	</div>
-        		<div class="experience-container">
-        			<h4>Won 3rd place of ACM SIGSPATIAL Cup 2013, and give a presentation on ACM SIGSPATIAL 2013, Orlando, FL.</h4>
-        			<div id="cup2013-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div id="spatial2013-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-	        		<div id="disney-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div class="col-md-4 map-container" id="map-container-4" style="height:250px;max-width:400px;"></div>
-        		</div>
-        		<div class="clear"></div>
-        	</div>
+            <!-- SIGSPATIAL Cup 2013 -->
+            <div style="margin-top:50px;" id="experience-4">
+                <div style="position:relative;height:0;" id="auchor-for-experience-4">
+                    <div class="experience-time" id="experience-time-4">NOV 13</div>
+                </div>
+                <div class="experience-container">
+                    <h4>Won 3rd place of ACM SIGSPATIAL Cup 2013, and give a presentation on ACM SIGSPATIAL 2013, Orlando, FL.</h4>
+                    <div id="cup2013-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="spatial2013-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="disney-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div class="col-md-4 map-container" id="map-container-4" style="height:250px;max-width:400px;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
 
-        	<!-- CNCC2013 -->
-        	<div style="margin-top:50px;" id="experience-5">
-        		<div style="position:relative;height:0;" id="auchor-for-experience-5">
-		        	<div class="experience-time" id="experience-time-5">OCT 13</div>
-	        	</div>
-        		<div class="experience-container">
-        			<h4>Attended CNCC2013 at Changsha, China. Awarded CCF Outstanding Undergraduate.</h4>
-        			<div id="cncc-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div id="gfkd-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-	        		<div id="ccfaward-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div class="col-md-4 map-container" id="map-container-5" style="height:250px;max-width:400px;"></div>
-        		</div>
-        		<div class="clear"></div>
-        	</div>
-        	
-        	<!-- Baixing Intern -->
-        	<div style="margin-top:50px;" id="experience-6">
-        		<div style="position:relative;height:0;" id="auchor-for-experience-6">
-		        	<div class="experience-time" id="experience-time-6">AUG 13</div>
-	        	</div>
-        		<div class="experience-container">
-        			<h4>Internship at Baixing.com as a backend engineer.</h4>
-        			<div id="baixing-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div class="col-md-4 map-container" id="map-container-6" style="height:250px;max-width:400px;"></div>
-        		</div>
-        		<div class="clear"></div>
-        	</div>
+            <!-- CNCC2013 -->
+            <div style="margin-top:50px;" id="experience-5">
+                <div style="position:relative;height:0;" id="auchor-for-experience-5">
+                    <div class="experience-time" id="experience-time-5">OCT 13</div>
+                </div>
+                <div class="experience-container">
+                    <h4>Attended CNCC2013 at Changsha, China. Awarded CCF Outstanding Undergraduate.</h4>
+                    <div id="cncc-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="gfkd-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="ccfaward-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div class="col-md-4 map-container" id="map-container-5" style="height:250px;max-width:400px;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+            <!-- Baixing Intern -->
+            <div style="margin-top:50px;" id="experience-6">
+                <div style="position:relative;height:0;" id="auchor-for-experience-6">
+                    <div class="experience-time" id="experience-time-6">AUG 13</div>
+                </div>
+                <div class="experience-container">
+                    <h4>Internship at Baixing.com as a backend engineer.</h4>
+                    <div id="baixing-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div class="col-md-4 map-container" id="map-container-6" style="height:250px;max-width:400px;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
 
-        	<!-- SIGSPATIAL Cup 2012 -->
-        	<div style="margin-top:50px;" id="experience-7">
-        		<div style="position:relative;height:0;" id="auchor-for-experience-7">
-		        	<div class="experience-time" id="experience-time-7">NOV 12</div>
-	        	</div>
-        		<div class="experience-container">
-        			<h4>Won 2nd place of ACM SIGSPATIAL Cup 2012, and give a presentation on ACM SIGSPATIAL 2012, Redondo Beach, CA.</h4>
-        			<div id="cup2012-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div id="semet-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-	        		<div id="poster-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div class="col-md-4 map-container" id="map-container-7" style="height:250px;max-width:400px;"></div>
-        		</div>
-        		<div class="clear"></div>
-        	</div>
+            <!-- SIGSPATIAL Cup 2012 -->
+            <div style="margin-top:50px;" id="experience-7">
+                <div style="position:relative;height:0;" id="auchor-for-experience-7">
+                    <div class="experience-time" id="experience-time-7">NOV 12</div>
+                </div>
+                <div class="experience-container">
+                    <h4>Won 2nd place of ACM SIGSPATIAL Cup 2012, and give a presentation on ACM SIGSPATIAL 2012, Redondo Beach, CA.</h4>
+                    <div id="cup2012-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="semet-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="poster-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div class="col-md-4 map-container" id="map-container-7" style="height:250px;max-width:400px;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
 
-        	<!-- FIFA2011 -->
-        	<div style="margin-top:50px;" id="experience-8">
-        		<div style="position:relative;height:0;" id="auchor-for-experience-8">
-		        	<div class="experience-time" id="experience-time-8">APR 11</div>
-	        	</div>
-        		<div class="experience-container">
-        			<h4>Participated in organization of 14th FIFA World Championships, Shanghai. Worked on reporting / presentation materials.</h4>
-        			<div id="jinshan-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div id="jianluchu-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-	        		<div id="liuxian-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div class="col-md-4 map-container" id="map-container-8" style="height:250px;max-width:400px;"></div>
-        		</div>
-        		<div class="clear"></div>
-        	</div>
+            <!-- FIFA2011 -->
+            <div style="margin-top:50px;" id="experience-8">
+                <div style="position:relative;height:0;" id="auchor-for-experience-8">
+                    <div class="experience-time" id="experience-time-8">APR 11</div>
+                </div>
+                <div class="experience-container">
+                    <h4>Participated in organization of 14th FIFA World Championships, Shanghai. Worked on reporting / presentation materials.</h4>
+                    <div id="jinshan-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="jianluchu-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div id="liuxian-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div class="col-md-4 map-container" id="map-container-8" style="height:250px;max-width:400px;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
 
-        	<!-- Fudan University -->
-        	<div style="margin-top:50px;" id="experience-9">
-        		<div style="position:relative;height:0;" id="auchor-for-experience-9">
-		        	<div class="experience-time" id="experience-time-9">SEP 10</div>
-	        	</div>
-        		<div class="experience-container">
-        			<h4>Started pursuing my B.S. degree at Fudan University, China.</h4>
-        			<div id="fudan-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div class="col-md-4 map-container" id="map-container-9" style="height:250px;max-width:400px;"></div>
-        		</div>
-        		<div class="clear"></div>
-        	</div>
+            <!-- Fudan University -->
+            <div style="margin-top:50px;" id="experience-9">
+                <div style="position:relative;height:0;" id="auchor-for-experience-9">
+                    <div class="experience-time" id="experience-time-9">SEP 10</div>
+                </div>
+                <div class="experience-container">
+                    <h4>Started pursuing my B.S. degree at Fudan University, China.</h4>
+                    <div id="fudan-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div class="col-md-4 map-container" id="map-container-9" style="height:250px;max-width:400px;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
 
-        	<!-- NOI2009 -->
-        	<div style="margin-top:50px;" id="experience-10">
-        		<div style="position:relative;height:0;" id="auchor-for-experience-10">
-		        	<div class="experience-time" id="experience-time-10">JUL 09</div>
-	        	</div>
-        		<div class="experience-container">
-        			<h4>Participated in NOI2009, a national wide programming contest. Experienced the biggest failure so far in my life.</h4>
-        			<div id="noi-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
-        			<div class="col-md-4 map-container" id="map-container-10" style="height:250px;max-width:400px;"></div>
-        		</div>
-        		<div class="clear"></div>
-        	</div>
-        	
-        	<div style="height:0;margin-top:50px;background-color:#dddddd" id="experience-11"></div>
-        	<div class="clear" style="height:100px;"></div>
+            <!-- NOI2009 -->
+            <div style="margin-top:50px;" id="experience-10">
+                <div style="position:relative;height:0;" id="auchor-for-experience-10">
+                    <div class="experience-time" id="experience-time-10">JUL 09</div>
+                </div>
+                <div class="experience-container">
+                    <h4>Participated in NOI2009, a national wide programming contest. Experienced the biggest failure so far in my life.</h4>
+                    <div id="noi-container" class="col-md-6"><img class="img-responsive experience-img" src="./content/experiences/placeholder.jpg"></div>
+                    <div class="col-md-4 map-container" id="map-container-10" style="height:250px;max-width:400px;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+            <div style="height:0;margin-top:50px;background-color:#dddddd" id="experience-11"></div>
+            <div class="clear" style="height:100px;"></div>
         </div>
         
         <div class="row section" id="resume" style="padding-top: 8%; background: #f47e94; min-height: 360px;">
-        	<div class="col-xs-12" style="text-align:center" id="resume-container">
-        		<div id="btn-show-resume-holder">
-			        <a href="javascript:showResume()" style="text-decoration: none;" id="btn-show-resume"><h2><strong class="btn-border" style="padding: 5px 20px 5px 20px; border-radius: 12px;" >View my resume</strong></h2></a>
-			    </div>
-		        <div style="height:20px;"></div>
-		        <div id="resume-box" style="overflow:hidden;display:none;padding-bottom:50px; max-width:800px; margin-left:auto; margin-right:auto;"></div>
-	        </div>
-	        <script>
-	        	function showResume() {
-	        		$('#resume-box').slideToggle(1000);
-	        		$('#resume-box').html('<img class="img-responsive" src="./content/resume.png" style="border-radius: 5px;">');
-	        	}
+            <div class="col-xs-12" style="text-align:center" id="resume-container">
+                <div id="btn-show-resume-holder">
+                    <a href="javascript:showResume()" style="text-decoration: none;" id="btn-show-resume"><h2><strong class="btn-border" style="padding: 5px 20px 5px 20px; border-radius: 12px;" >View my resume</strong></h2></a>
+                </div>
+                <div style="height:20px;"></div>
+                <div id="resume-box" style="overflow:hidden;display:none;padding-bottom:50px; max-width:800px; margin-left:auto; margin-right:auto;"></div>
+            </div>
+            <script>
+                function showResume() {
+                    $('#resume-box').slideToggle(1000);
+                    $('#resume-box').html('<img class="img-responsive" src="./content/resume.png" style="border-radius: 5px;">');
+                }
 
-	        	$('#btn-show-resume').mouseover(function() {
-	        		$('#btn-show-resume-holder').addClass('animated').addClass('pulse');
-	        	});
-	        	
-	        	$('#btn-show-resume').mouseout(function() {
-	        		$('#btn-show-resume-holder').removeClass('animated').removeClass('pulse');
-	        	});
-	        </script>
+                $('#btn-show-resume').mouseover(function() {
+                    $('#btn-show-resume-holder').addClass('animated').addClass('pulse');
+                });
+                
+                $('#btn-show-resume').mouseout(function() {
+                    $('#btn-show-resume-holder').removeClass('animated').removeClass('pulse');
+                });
+            </script>
         </div>
 
         <div class="row section" id="mypast" style="padding-top: 4%; background: #f1c410; min-height: 360px;">
-        	<div class="col-xs-12" style="text-align:center" id="interest-title">
-			    <h3 class="text-info" style="margin-top:0px; color:white">I have lots of interests, although I am an amateur of most of them.</h3>
-		    </div>
-		    <div style="height:20px;clear:both;"></div>
-		    
-		    <!-- Painting -->
-		    <div class="col-xs-6 outer" style="min-width:400px;" id="interest-item-1">
-		    	<a class="interest-anchor" href="./interests.html#painting">
-			    	<div style="float:left;max-width:30%;">
-			    		<img class="img-responsive" src="./content/interests/painting.png">
-			    	</div>
-			    	<div style="float:left;width:70%;padding-left:20px;">
-			    		<strong>
-						    <h4 class="text-info" style="margin-top:0px; color:white">Painting</h4>
-						    <p>
-						    	I learned painting from 4 years old to 11 years old.
-						    </p>
-							<p>
-						    	I can draw Chinese Meticulous Painting, Chinese Free Sketch Painting, Line-Drawing, Sketch, and Gouache.
-						    </p>
-						</strong>
-					</div>
-					<div class="clear"></div>
-				</a>
-		    </div>
+            <div class="col-xs-12" style="text-align:center" id="interest-title">
+                <h3 class="text-info" style="margin-top:0px; color:white">I have lots of interests, although I am an amateur of most of them.</h3>
+            </div>
+            <div style="height:20px;clear:both;"></div>
+            
+            <!-- Painting -->
+            <div class="col-xs-6 outer" style="min-width:400px;" id="interest-item-1">
+                <a class="interest-anchor" href="./interests.html#painting">
+                    <div style="float:left;max-width:30%;">
+                        <img class="img-responsive" src="./content/interests/painting.png">
+                    </div>
+                    <div style="float:left;width:70%;padding-left:20px;">
+                        <strong>
+                            <h4 class="text-info" style="margin-top:0px; color:white">Painting</h4>
+                            <p>
+                                I learned painting from 4 years old to 11 years old.
+                            </p>
+                            <p>
+                                I can draw Chinese Meticulous Painting, Chinese Free Sketch Painting, Line-Drawing, Sketch, and Gouache.
+                            </p>
+                        </strong>
+                    </div>
+                    <div class="clear"></div>
+                </a>
+            </div>
 
-		    <!-- Handicraft -->
-		    <div class="col-xs-6 outer" style="min-width:400px;" id="interest-item-2">
-		    	<a class="interest-anchor" href="./interests.html#handicraft">
-			    	<div style="float:left;max-width:30%;">
-			    		<img class="img-responsive" src="./content/interests/handicraft.png">
-			    	</div>
-			    	<div style="float:left;width:70%;padding-left:20px;">
-			    		<strong>
-						    <h4 class="text-info" style="margin-top:0px; color:white">Handicraft</h4>
-						    <p>
-						    	I am an amateur of handicraft art.
-						    </p>
-						    <p>
-						    	I have made some jet fighter models, rocket models, space shuttle models, and many other small stuff.
-						    </p>
-					    </strong>
-					</div>
-					<div class="clear"></div>
-				</a>
-		    </div>
+            <!-- Handicraft -->
+            <div class="col-xs-6 outer" style="min-width:400px;" id="interest-item-2">
+                <a class="interest-anchor" href="./interests.html#handicraft">
+                    <div style="float:left;max-width:30%;">
+                        <img class="img-responsive" src="./content/interests/handicraft.png">
+                    </div>
+                    <div style="float:left;width:70%;padding-left:20px;">
+                        <strong>
+                            <h4 class="text-info" style="margin-top:0px; color:white">Handicraft</h4>
+                            <p>
+                                I am an amateur of handicraft art.
+                            </p>
+                            <p>
+                                I have made some jet fighter models, rocket models, space shuttle models, and many other small stuff.
+                            </p>
+                        </strong>
+                    </div>
+                    <div class="clear"></div>
+                </a>
+            </div>
 
-		    <div class="clear"></div>
+            <div class="clear"></div>
 
-		    <!-- City Planning -->
-		    <div class="col-xs-6 outer" style="min-width:400px;" id="interest-item-3">
-		    	<a class="interest-anchor" href="./interests.html#cityplan">
-			    	<div style="float:left;max-width:30%;">
-			    		<img class="img-responsive" src="./content/interests/cityplan.png">
-			    	</div>
-			    	<div style="float:left;width:70%;padding-left:20px;">
-			    		<strong>
-						    <h4 class="text-info" style="margin-top:0px; color:white">City Planning</h4>
-						    <p>
-						    	I have never learned professional city planning, but I have designed a city.
-						    </p>
-						    <p>
-						    	My approach focuses on the balance between urban economic carrying capacity and environment protection.
-						    </p>
-					    </strong>
-					</div>
-					<div class="clear"></div>
-				</a>
-		    </div>
-		    
-		    <!-- Animation & Games -->
-		    <div class="col-xs-6 outer" style="min-width:400px;" id="interest-item-4">
-		    	<a class="interest-anchor" href="./interests.html#cartoon">
-			    	<div style="float:left;max-width:30%;">
-			    		<img class="img-responsive" src="./content/interests/cartoon.png">
-			    	</div>
-			    	<div style="float:left;width:70%;padding-left:20px;">
-			    		<strong>
-						    <h4 class="text-info" style="margin-top:0px; color:white">Animation &amp; Games</h4>
-						    <p>
-						    	I have made many flash animations and games when I was an elementary school student.
-						    </p>
-					    </strong>
-					</div>
-					<div class="clear"></div>
-				</a>
-		    </div>
+            <!-- City Planning -->
+            <div class="col-xs-6 outer" style="min-width:400px;" id="interest-item-3">
+                <a class="interest-anchor" href="./interests.html#cityplan">
+                    <div style="float:left;max-width:30%;">
+                        <img class="img-responsive" src="./content/interests/cityplan.png">
+                    </div>
+                    <div style="float:left;width:70%;padding-left:20px;">
+                        <strong>
+                            <h4 class="text-info" style="margin-top:0px; color:white">City Planning</h4>
+                            <p>
+                                I have never learned professional city planning, but I have designed a city.
+                            </p>
+                            <p>
+                                My approach focuses on the balance between urban economic carrying capacity and environment protection.
+                            </p>
+                        </strong>
+                    </div>
+                    <div class="clear"></div>
+                </a>
+            </div>
+            
+            <!-- Animation & Games -->
+            <div class="col-xs-6 outer" style="min-width:400px;" id="interest-item-4">
+                <a class="interest-anchor" href="./interests.html#cartoon">
+                    <div style="float:left;max-width:30%;">
+                        <img class="img-responsive" src="./content/interests/cartoon.png">
+                    </div>
+                    <div style="float:left;width:70%;padding-left:20px;">
+                        <strong>
+                            <h4 class="text-info" style="margin-top:0px; color:white">Animation &amp; Games</h4>
+                            <p>
+                                I have made many flash animations and games when I was an elementary school student.
+                            </p>
+                        </strong>
+                    </div>
+                    <div class="clear"></div>
+                </a>
+            </div>
 
-		    <div class="clear"></div>
-		    
-		    <!-- Traveling -->
-		    <div class="col-xs-6 outer" style="min-width:400px;" id="interest-item-5">
-		    	<a class="interest-anchor" href="./interests.html#travel">
-			    	<div style="float:left;max-width:30%;">
-			    		<img class="img-responsive" src="./content/interests/travel.png">
-			    	</div>
-			    	<div style="float:left;width:70%;padding-left:20px;">
-			    		<strong>
-						    <h4 class="text-info" style="margin-top:0px; color:white">Traveling</h4>
-						    <p>
-						    	I have visited a lot of places in China and some places in the US.
-						    </p>
-						    <p>
-						    	I am always on the way to explore more.
-						    </p>
-					    </strong>
-					</div>
-					<div class="clear"></div>
-				</a>
-		    </div>
-		    <div style="height:20px;clear:both;"></div>
+            <div class="clear"></div>
+            
+            <!-- Traveling -->
+            <div class="col-xs-6 outer" style="min-width:400px;" id="interest-item-5">
+                <a class="interest-anchor" href="./interests.html#travel">
+                    <div style="float:left;max-width:30%;">
+                        <img class="img-responsive" src="./content/interests/travel.png">
+                    </div>
+                    <div style="float:left;width:70%;padding-left:20px;">
+                        <strong>
+                            <h4 class="text-info" style="margin-top:0px; color:white">Traveling</h4>
+                            <p>
+                                I have visited a lot of places in China and some places in the US.
+                            </p>
+                            <p>
+                                I am always on the way to explore more.
+                            </p>
+                        </strong>
+                    </div>
+                    <div class="clear"></div>
+                </a>
+            </div>
+            <div style="height:20px;clear:both;"></div>
         </div>
         
         <div class="row section" id="mydream" style="padding-top: 8%; background: #1cabe3; min-height: 360px;">
@@ -686,130 +686,130 @@
       
 
         <div class="row" style="background: #6860d7" id="footer-wrapper">
-	        <div class="col-lg-12">
-	            <div align="center">
-	            	<h4>© 2015 Renchu Song | <a href="" id="intelligent-email"></a></h4>
-	            </div>
-	        </div>
+            <div class="col-lg-12">
+                <div align="center">
+                    <h4>© 2015 Renchu Song | <a href="" id="intelligent-email"></a></h4>
+                </div>
+            </div>
         </div>
 
         <script>
-        	var experienceHeight = $('#experiences').height();
+            var experienceHeight = $('#experiences').height();
 
-		    L.mapbox.accessToken = 'pk.eyJ1Ijoic29uZ3JlbmNodSIsImEiOiIxcnItZkhvIn0.-3Ye_B9i_CdXfy--NDJJiA';
+            L.mapbox.accessToken = 'pk.eyJ1Ijoic29uZ3JlbmNodSIsImEiOiIxcnItZkhvIn0.-3Ye_B9i_CdXfy--NDJJiA';
 
-        	// Construct email from script to avoid spamer.
-        	$(window).load(function() {
-        		var item = ['o','g','s','n','u','c','h','e','n','r','@','g','m','o','c','m','i','a','l','.'];
-        		var order = [2, 0, 3, 1, 9, 7, 8, 5, 6, 4, 10, 11, 15, 17, 16, 18, 19, 14, 13, 12];
-        		var addr = '';
-        		for (var i = 0; i < item.length; i++) addr += item[order[i]];
-        		$("#intelligent-email").html(addr);
-        		$("#intelligent-email").attr('href', 'mailto:' + addr);
-        		
-        	});
+            // Construct email from script to avoid spamer.
+            $(window).load(function() {
+                var item = ['o','g','s','n','u','c','h','e','n','r','@','g','m','o','c','m','i','a','l','.'];
+                var order = [2, 0, 3, 1, 9, 7, 8, 5, 6, 4, 10, 11, 15, 17, 16, 18, 19, 14, 13, 12];
+                var addr = '';
+                for (var i = 0; i < item.length; i++) addr += item[order[i]];
+                $("#intelligent-email").html(addr);
+                $("#intelligent-email").attr('href', 'mailto:' + addr);
+                
+            });
 
-        	var experienceLoad = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,];
+            var experienceLoad = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,];
 
-        	var experienceData = [
-        		{
-        			'img' : ['mtv'],
-        			'map' : [-122.081267,37.4038194, 'GraphSQL Inc', 8],
-        		},
-        		{
-        			'img' : ['cornell', 'tower', 'gates'],
-        			'map' : [-76.4976751, 42.4496725, 'Cornell University', 13],
-        		},
-        		{
-        			'img' : ['googleplex', 'android', 'noogler'],
-        			'map' : [-122.084058, 37.422, 'Google Inc', 10],
-        		},
-        		{
-        			'img' : ['tmap_honor', 'tmap_pre', 'tmap_team'],
-        			'map' : [121.598502, 31.191637, 'Fudan University Zhangjiang Campus', 10],
-        		},
-        		{
-        			'img' : ['cup2013', 'spatial2013', 'disney'],
-        			'map' : [-81.36875, 28.4811689, 'Orlando, FL', 6],
-        		},
-        		{
-        			'img' : ['cncc', 'gfkd', 'ccfaward'],
-        			'map' : [113.0245972, 28.1761294, 'Changsha, China', 5],
-        		},
-        		{
-        			'img' : ['baixing'],
-        			'map' : [121.435112, 31.197181, 'Baixing.com', 10],
-        		},
-        		{
-        			'img' : ['cup2012', 'semet', 'poster'],
-        			'map' : [-118.3771421, 33.854634, 'Redondo Beach, CA', 6],
-        		},
-        		{
-        			'img' : ['jinshan', 'jianluchu', 'liuxian'],
-        			'map' : [121.3339459, 30.7033187, 'Shanghai, China', 10],
-        		},
-        		{
-        			'img' : ['fudan'],
-        			'map' : [121.501618, 31.29972, 'Fudan University', 15],
-        		},
-        		{
-        			'img' : ['noi'],
-        			'map' : [116.475458, 40.01099, '80th High School, Beijing', 8],
-        		},	
-        	];
+            var experienceData = [
+                {
+                    'img' : ['mtv'],
+                    'map' : [-122.081267,37.4038194, 'GraphSQL Inc', 8],
+                },
+                {
+                    'img' : ['cornell', 'tower', 'gates'],
+                    'map' : [-76.4976751, 42.4496725, 'Cornell University', 13],
+                },
+                {
+                    'img' : ['googleplex', 'android', 'noogler'],
+                    'map' : [-122.084058, 37.422, 'Google Inc', 10],
+                },
+                {
+                    'img' : ['tmap_honor', 'tmap_pre', 'tmap_team'],
+                    'map' : [121.598502, 31.191637, 'Fudan University Zhangjiang Campus', 10],
+                },
+                {
+                    'img' : ['cup2013', 'spatial2013', 'disney'],
+                    'map' : [-81.36875, 28.4811689, 'Orlando, FL', 6],
+                },
+                {
+                    'img' : ['cncc', 'gfkd', 'ccfaward'],
+                    'map' : [113.0245972, 28.1761294, 'Changsha, China', 5],
+                },
+                {
+                    'img' : ['baixing'],
+                    'map' : [121.435112, 31.197181, 'Baixing.com', 10],
+                },
+                {
+                    'img' : ['cup2012', 'semet', 'poster'],
+                    'map' : [-118.3771421, 33.854634, 'Redondo Beach, CA', 6],
+                },
+                {
+                    'img' : ['jinshan', 'jianluchu', 'liuxian'],
+                    'map' : [121.3339459, 30.7033187, 'Shanghai, China', 10],
+                },
+                {
+                    'img' : ['fudan'],
+                    'map' : [121.501618, 31.29972, 'Fudan University', 15],
+                },
+                {
+                    'img' : ['noi'],
+                    'map' : [116.475458, 40.01099, '80th High School, Beijing', 8],
+                },    
+            ];
 
-        	// Control highlight of navbar
-      	    $(window).scroll(function() {
-      	    	// Hack to make the height of experience be highest.
-      	    	if (experienceHeight < $('#experiences').height()) {
-      	    		experienceHeight = $('#experiences').height();
-      	    		$('#experiences').css('height', experienceHeight);
-      	    	}
+            // Control highlight of navbar
+              $(window).scroll(function() {
+                  // Hack to make the height of experience be highest.
+                  if (experienceHeight < $('#experiences').height()) {
+                      experienceHeight = $('#experiences').height();
+                      $('#experiences').css('height', experienceHeight);
+                  }
                 var height = $(window).scrollTop();
                 $('#nav').find('a').removeClass('btn-primary').removeClass('active');
                 
                 // Control the position of timeline bar
                 $('#experience-timeline-bar').css('height', $('#experiences').height() - 130);
 
-	            // Control the position of timeline times
-	            //if (height < $('#resume').offset().top && height > $('#experiences').offset().top) {
-	            for (var i = 0; i <= 10; i++) {
-	            	if(height > $('#auchor-for-experience-' + i).offset().top - 50 && height < $('#experience-' + (i + 1)).offset().top - 200){
-		                $("#experience-time-" + i).addClass('fixed').removeClass('bottomed');
-		            } else if (height > $('#experience-' + (i + 1)).offset().top - 200) {
-		            	$("#auchor-for-experience-" + i).css("top", $("#experience-" + i).height());
-		            	$("#experience-time-" + i).addClass('bottomed').removeClass('fixed');
-		            } else {
-		            	$("#auchor-for-experience-" + i).css("top", 0);
-		            	$("#experience-time-" + i).removeClass('fixed').removeClass('bottomed');
-		            }
-	            }
-		        //}
+                // Control the position of timeline times
+                //if (height < $('#resume').offset().top && height > $('#experiences').offset().top) {
+                for (var i = 0; i <= 10; i++) {
+                    if(height > $('#auchor-for-experience-' + i).offset().top - 50 && height < $('#experience-' + (i + 1)).offset().top - 200){
+                        $("#experience-time-" + i).addClass('fixed').removeClass('bottomed');
+                    } else if (height > $('#experience-' + (i + 1)).offset().top - 200) {
+                        $("#auchor-for-experience-" + i).css("top", $("#experience-" + i).height());
+                        $("#experience-time-" + i).addClass('bottomed').removeClass('fixed');
+                    } else {
+                        $("#auchor-for-experience-" + i).css("top", 0);
+                        $("#experience-time-" + i).removeClass('fixed').removeClass('bottomed');
+                    }
+                }
+                //}
 
-	            for (var i = 10; i >= 0; i--) {
-		            if (height > $('#experience-' + i).offset().top - $(window).height()) {
-		            	if (!experienceLoad[i]) {
-		            		experienceLoad[i] = true;
-		            		for (var j = 0; j < experienceData[i]['img'].length; j++) {	        
-								$("#" + experienceData[i]['img'][j] + "-container").html('<img class="img-responsive experience-img" src="./content/experiences/' + experienceData[i]['img'][j] + '.jpg">');
-							}
-							var mapContainer0 = L.mapbox.map('map-container-' + i, 'songrenchu.l0ejennp').setView([experienceData[i]['map'][1],experienceData[i]['map'][0]],experienceData[i]['map'][3]);
+                for (var i = 10; i >= 0; i--) {
+                    if (height > $('#experience-' + i).offset().top - $(window).height()) {
+                        if (!experienceLoad[i]) {
+                            experienceLoad[i] = true;
+                            for (var j = 0; j < experienceData[i]['img'].length; j++) {            
+                                $("#" + experienceData[i]['img'][j] + "-container").html('<img class="img-responsive experience-img" src="./content/experiences/' + experienceData[i]['img'][j] + '.jpg">');
+                            }
+                            var mapContainer0 = L.mapbox.map('map-container-' + i, 'songrenchu.l0ejennp').setView([experienceData[i]['map'][1],experienceData[i]['map'][0]],experienceData[i]['map'][3]);
 
-				            L.mapbox.featureLayer({
-				                type: 'Feature',
-				                geometry: {
-				                    type: 'Point',
-				                    coordinates: [experienceData[i]['map'][0], experienceData[i]['map'][1]]
-				                },
-				                properties: {
-				                    title: experienceData[i]['map'][2],
-				                    'marker-color': '#EE5F35',
-				                    'marker-size': 'medium',
-				                }
-				            }).addTo(mapContainer0).openPopup();
-				        }
-		            }
-		        }
+                            L.mapbox.featureLayer({
+                                type: 'Feature',
+                                geometry: {
+                                    type: 'Point',
+                                    coordinates: [experienceData[i]['map'][0], experienceData[i]['map'][1]]
+                                },
+                                properties: {
+                                    title: experienceData[i]['map'][2],
+                                    'marker-color': '#EE5F35',
+                                    'marker-size': 'medium',
+                                }
+                            }).addTo(mapContainer0).openPopup();
+                        }
+                    }
+                }
 
                 if(height > ($('#mydream').offset().top-($(window).height()/2))) {
                     $('#dreamNav').addClass('btn-primary').addClass('active');
@@ -832,34 +832,34 @@
                     $('#expsNav').addClass('btn-primary').addClass('active');
                 }
                 else if(height > ($('#projects').offset().top-($(window).height()/2))) {
-          			$('#projsNav').addClass('btn-primary').addClass('active');
-          			$.each(
-		        		$(".project-small-intro"), function(key, value) {
-		        			var delayClass;
-		        			if (key < 10) delayClass = 'delayp' + key;
-		        			else if (key > 14) delayClass = 'delay2s';
-		        			else delayClass = 'delay1s';
-		        			$(value).removeClass('outer').addClass('animated').addClass('flipInY').addClass(delayClass);
-		        		}
-		        	);
-          			$('#project-title').addClass('animated').addClass('tada');
+                      $('#projsNav').addClass('btn-primary').addClass('active');
+                      $.each(
+                        $(".project-small-intro"), function(key, value) {
+                            var delayClass;
+                            if (key < 10) delayClass = 'delayp' + key;
+                            else if (key > 14) delayClass = 'delay2s';
+                            else delayClass = 'delay1s';
+                            $(value).removeClass('outer').addClass('animated').addClass('flipInY').addClass(delayClass);
+                        }
+                    );
+                      $('#project-title').addClass('animated').addClass('tada');
                 }
                 else {
-	                $('#homeNav').addClass('btn-primary').addClass('active');
+                    $('#homeNav').addClass('btn-primary').addClass('active');
               }
             });
 
-			// Resize sections
-			$(window).load(function(){
+            // Resize sections
+            $(window).load(function(){
               $('.section').css('min-height', $(window).height());
             });
             $('.section').css('min-height', $(window).height());
             
             $(window).resize(function() {
-      	    	if (experienceHeight < $('#experiences').height()) {
-      	    		experienceHeight = $('#experiences').height();
-      	    		$('#experiences').css('height', experienceHeight);
-      	    	}
+                  if (experienceHeight < $('#experiences').height()) {
+                      experienceHeight = $('#experiences').height();
+                      $('#experiences').css('height', experienceHeight);
+                  }
             });
         </script>
     </body>
