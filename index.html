@@ -155,7 +155,7 @@
 		            <script>
 			            function scrollTo(element) {
 			            	var height = $(window).scrollTop();
-			                $('html,body').animate({scrollTop: $('#' + element).offset().top - 42}, {easing: "linear",duration: Math.abs(height - ($('#' + element).offset().top - 42)) / 1.5});
+			                $('html,body').animate({scrollTop: $('#' + element).offset().top - 42}, 1000);
 			            }
 		            </script>
 		        </div>
@@ -772,19 +772,19 @@
                 $('#experience-timeline-bar').css('height', $('#experiences').height() - 130);
 
 	            // Control the position of timeline times
-	            if (height < $('#resume').offset().top && height > $('#experiences').offset().top) {
-		            for (var i = 0; i <= 10; i++) {
-		            	if(height > $('#auchor-for-experience-' + i).offset().top - 50 && height < $('#experience-' + (i + 1)).offset().top - 200){
-			                $("#experience-time-" + i).addClass('fixed').removeClass('bottomed');
-			            } else if (height > $('#experience-' + (i + 1)).offset().top - 200) {
-			            	$("#auchor-for-experience-" + i).css("top", $("#experience-" + i).height());
-			            	$("#experience-time-" + i).addClass('bottomed').removeClass('fixed');
-			            } else {
-			            	$("#auchor-for-experience-" + i).css("top", 0);
-			            	$("#experience-time-" + i).removeClass('fixed').removeClass('bottomed');
-			            }
+	            //if (height < $('#resume').offset().top && height > $('#experiences').offset().top) {
+	            for (var i = 0; i <= 10; i++) {
+	            	if(height > $('#auchor-for-experience-' + i).offset().top - 50 && height < $('#experience-' + (i + 1)).offset().top - 200){
+		                $("#experience-time-" + i).addClass('fixed').removeClass('bottomed');
+		            } else if (height > $('#experience-' + (i + 1)).offset().top - 200) {
+		            	$("#auchor-for-experience-" + i).css("top", $("#experience-" + i).height());
+		            	$("#experience-time-" + i).addClass('bottomed').removeClass('fixed');
+		            } else {
+		            	$("#auchor-for-experience-" + i).css("top", 0);
+		            	$("#experience-time-" + i).removeClass('fixed').removeClass('bottomed');
 		            }
-		        }
+	            }
+		        //}
 
 	            for (var i = 10; i >= 0; i--) {
 		            if (height > $('#experience-' + i).offset().top - $(window).height()) {
