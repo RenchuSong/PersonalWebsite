@@ -634,8 +634,28 @@
 				</a>
 		    </div>
 		    
-		    <!-- Traveling -->
+		    <!-- Animation & Games -->
 		    <div class="col-xs-6 outer" style="min-width:400px;" id="interest-item-4">
+		    	<a class="interest-anchor" href="./interests.html#cartoon">
+			    	<div style="float:left;max-width:30%;">
+			    		<img class="img-responsive" src="./content/interests/cartoon.png">
+			    	</div>
+			    	<div style="float:left;width:70%;padding-left:20px;">
+			    		<strong>
+						    <h4 class="text-info" style="margin-top:0px; color:white">Animation &amp; Games</h4>
+						    <p>
+						    	I have made many flash animations and games when I was an elementary school student.
+						    </p>
+					    </strong>
+					</div>
+					<div class="clear"></div>
+				</a>
+		    </div>
+
+		    <div class="clear"></div>
+		    
+		    <!-- Traveling -->
+		    <div class="col-xs-6 outer" style="min-width:400px;" id="interest-item-5">
 		    	<a class="interest-anchor" href="./interests.html#travel">
 			    	<div style="float:left;max-width:30%;">
 			    		<img class="img-responsive" src="./content/interests/travel.png">
@@ -654,7 +674,6 @@
 					<div class="clear"></div>
 				</a>
 		    </div>
-
 		    <div style="height:20px;clear:both;"></div>
         </div>
         
@@ -801,6 +820,7 @@
                     $('#interest-item-2').removeClass('outer').addClass('animated').addClass('bounceInLeft').addClass('delayp2');
                     $('#interest-item-3').removeClass('outer').addClass('animated').addClass('bounceInLeft').addClass('delayp4');
                     $('#interest-item-4').removeClass('outer').addClass('animated').addClass('bounceInLeft').addClass('delayp6');
+                    $('#interest-item-5').removeClass('outer').addClass('animated').addClass('bounceInLeft').addClass('delayp8');
                     
                 }
                 else if(height > ($('#resume').offset().top-($(window)).height()/2)) {
@@ -834,6 +854,12 @@
             });
             $('.section').css('min-height', $(window).height());
             
+            $(window).resize(function() {
+      	    	if (experienceHeight < $('#experiences').height()) {
+      	    		experienceHeight = $('#experiences').height();
+      	    		$('#experiences').css('height', experienceHeight);
+      	    	}
+            });
         </script>
     </body>
 </html>
