@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+        <title>Renchu Song</title>
+        <meta name="description" content="Renchu's Portfolio">
+        <meta property="og:title" content="Renchu Song">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="myface.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:description" content="Renchu's Portfolio">
+        <link href="./dist/css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="./css/bootswatch.css" rel="stylesheet" media="screen">
+        <link href="./css/animate.css" rel="stylesheet" media="screen">
+        <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+        <link href="./css/incontent.css" rel="stylesheet">
+        <link href="./css/figure.css" rel="stylesheet">
+        
+        <!-- Animation Delay, Not Sure Why Origianl Not Working -->
+        <link href="./css/delay.css" rel="stylesheet">
+
+
+        <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+        <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/bootswatch.js"></script>
+        <script src="./js/modernizr.custom.js"></script>
+      
+        <style>
+            html, body { overflow-x:hidden; padding:0px;}
+            .section{
+                padding-left:1.5em;
+                padding-right:1.5em;
+                padding-top:5%;
+            }
+            p {
+                font-size:1.1em;
+            }
+            div, a, a:focus, p {
+                color: #ffffff;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: #ffff00;
+            }
+
+            a:focus, a:active {
+                text-decoration: none;
+            }
+
+            .clear {
+                width:100%;
+                clear:both;
+            }
+
+            .outer {
+                position:relative;
+                left:-1500px;
+            }
+            
+            .col-md-4 {
+                margin-top: 20px;
+            }
+
+            .col-md-6 {
+                padding-left: 0;
+                margin-top: 20px;
+                max-width: 500px;
+            }
+
+            #resume-container a:focus, #resume-container a:hover {
+                color:white;
+            }
+
+            .btn-border {
+                border: 4px solid white; 
+            }
+
+            .contact-logo-float {
+                position:absolute;
+            }
+
+            #nav-bar-wrapper {
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+            }
+
+            .fixed {
+                position:fixed;
+                top:50px;
+            }
+
+            .bottomed {
+                position: absolute;
+                left:0;
+                top:auto;
+                bottom:0;
+            }
+
+            .experience-time {
+                width:100px; 
+                height:100px; 
+                background-color:#F7952B; 
+                margin-left:50px;
+                z-index:10;
+                border-radius:50px;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+                padding:18px 20px 0 16px;
+                font-size: 24px;
+                text-align: center;
+                font-family: "Arial Black", Gadget, sans-serif;
+            }
+
+            .experience-container {
+                margin-left: 150px;
+                padding: 0 20px 0 20px;
+            }
+
+            .experience-img, .map-container {
+                border-radius:5px;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+            }
+
+            .map-container div {
+                color: #000000;
+            }
+
+            a.interest-anchor {
+                display: block;
+                padding:20px;
+            }
+            a.interest-anchor:hover {
+                background-color: #F99704;
+                border-radius: 10px;
+            }
+        </style>
+
+    </head>
+
+    <body style="background: #6860d7;">
+        <div class="navbar navbar-default navbar-fixed-top" style="background: #6860d7; border:0;" id="nav-bar-wrapper">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="javascript:void(0)" class="navbar-brand back" style="color:white">Renchu Song | Interests</a>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function(){
+                    $('a.back').click(function(){
+                        parent.history.back();
+                        return false;
+                    });
+                });
+            </script>
+        </div>
+        <div style="height:42px;"></div>
+
+        <!-- Painting -->
+        <a id="painting"></a>
+        <div class="row section" style="padding-top: 8%; background: #1cabe3; min-height: 360px;">
+            
+
+        </div>
+
+        <!-- Handicraft -->
+        <a id="handicraft"></a>
+        <div class="row section" style="padding-top: 8%; background: #35a8a1; min-height: 360px;">
+            
+            
+            
+        </div>
+
+        <!-- City Planning -->
+        <a id="cityplan"></a>
+        <div class="row section" style="padding-top: 8%; background: #ee5f35; min-height: 360px;">
+            
+            
+        </div>
+        
+        <!-- Animation -->
+        <a id="cartoon"></a>
+        <div class="row section" style="padding-top: 8%; background: #f47e94; min-height: 360px;">
+            
+            
+        </div>
+
+        <!-- Traveling -->
+        <a id="travel"></a>
+        <div class="row section" style="padding-top: 8%; background: #f1c410; min-height: 360px;">
+            
+            
+        </div>
+        
+
+
+        <div class="row" style="background: #6860d7" id="footer-wrapper">
+            <div class="col-lg-12">
+                <div align="center">
+                    <h4>© 2015 Renchu Song | <a href="" id="intelligent-email"></a></h4>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Construct email from script to avoid spamer.
+            $(window).load(function() {
+                var item = ['o','g','s','n','u','c','h','e','n','r','@','g','m','o','c','m','i','a','l','.'];
+                var order = [2, 0, 3, 1, 9, 7, 8, 5, 6, 4, 10, 11, 15, 17, 16, 18, 19, 14, 13, 12];
+                var addr = '';
+                for (var i = 0; i < item.length; i++) addr += item[order[i]];
+                $("#intelligent-email").html(addr);
+                $("#intelligent-email").attr('href', 'mailto:' + addr);
+                
+            });
+
+            $('.section').css('min-height', $(window).height() + 50);
+        </script>
+    </body>
+</html>
