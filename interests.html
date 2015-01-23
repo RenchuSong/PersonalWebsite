@@ -117,7 +117,7 @@
                 padding: 0 20px 0 20px;
             }
 
-            .experience-img, .map-container {
+            .experience-img, .map-container{
                 border-radius:5px;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
             }
 
@@ -137,6 +137,22 @@
             a.interest-anchor:hover {
                 background-color: #F99704;
                 border-radius: 10px;
+            }
+            a.animation-container {
+                display: block;
+                padding:5px;
+                border: 2px solid white;
+                border-radius:5px;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            a.animation-container:hover {
+                border: 2px solid #ffff00;
+            }
+
+            #animation-viewer {
+                border: 2px solid white;
+                border-radius:5px;
             }
         </style>
 
@@ -229,8 +245,67 @@
         <!-- Animation -->
         <a id="cartoon"></a>
         <div class="row section" style="padding-top: 8%; background: #f47e94; min-height: 360px;">
-            
-            
+            <div class="col-xs-12" style="text-align:center">
+                <h3 class="text-info" style="margin-top:0px; color:white">Here are some of flash animations and games I made.</h3>
+                <h4 class="text-info" style="margin-top:0px; color:white">I made most of them before coming to senior high school.</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:center;">
+                <div style="margin:20px;padding:20px;">
+                    <script>
+                        var animationData = [
+                            ['spacecraft', 1755, 1270],
+                            ['tangshan', 1755, 1270],
+                            ['musicplayer', 1755, 1300],
+                            ['website', 550, 733],
+                            ['artillerymen', 550, 410],
+                            ['pinball', 550, 440],
+                            ['piano', 550, 410],
+                            ['gobang', 550, 400],
+                        ];
+                        var animationIntro = [
+                            '<p>A simulation of the whole process of launching Shenzhou VI spacecraft.</p><p>I made this animation at 14 years old.</p>',
+                            '<p>This animation demostrates my love to my hometown, Tangshan, which is a great city reborned from a catastrophic earthquake.</p><p>I wrote the lyrics myself, and borrowed the melody from another song "I love Dalian" sang by Chinese singer Liu Huan. I played the melody with a clarinet.</p><p>I made this animation at 14 years old.</p>',
+                            '<p>This is a music player. You can change background, video, and select songs to play. You can even switch between normal mode and simple mode.</p><p>At that age, file IO was far beyond my scope of knowledge. So all songs are embedded.</p><p>I made this program at 12 years old.</p>',
+                            '<p>This is my flash version personal website.</p><p>Internet in my mind at that time was no more than text, music, animation and games. That\'s all I have within my website.</p><p>I made this at 13 years old.</p>',
+                            '<p>This is a first person shooter game. Actually I made four versions of the game, but other three are lost. Their screenshots can be found within my flash version personal website above.</p><p>I made this at 12 years old.</p>',
+                            '<p>This is a pinball game. At that age I have no idea about parabola and gravity, so all rebounds don\'t obey any physical law.</p><p>I made this at 12 years old.</p>',
+                            '<p>The idea is similar with GarageBand by Apple Inc, but mine has a much worse user experience of course.</p><p>I made this at 12 years old.</p>',
+                            '<p>This is a gobang simulator. It is so simple that it cannot even judge who is the winner. It does not have an AI player of course.</p><p>I made this at 11 years old.</p>',
+                        ];
+                        
+                        function showAnimation(i) {
+                            var h = animationData[i][2] * 550 / animationData[i][1];
+                            $('#animation-viewer').html(
+                                '<object type="application/x-shockwave-flash" data="./content/interests/animation/' + animationData[i][0] + '.swf"  width="550" height="' + (parseInt(h) + 1) + '"> <param name="movie" value="./content/interests/animation/' + animationData[i][0] + '.swf" /> <param name="quality" value="high"/> </object>'
+                            );
+                            $('#animation-viewer').height((parseInt(h) - 2));
+                            $('#animation-intro').html(animationIntro[i]);
+                        }
+                    </script>
+
+                    <div class="col-xs-3" style="min-width:250px;">
+                        <a class="animation-container" href="javascript:showAnimation(0);">Shenzhou VI spacecraft</a>
+                        <a class="animation-container" href="javascript:showAnimation(1);">I love Tangshan</a>
+                        <a class="animation-container" href="javascript:showAnimation(2);">SRC music player</a>
+                        <a class="animation-container" href="javascript:showAnimation(3);">SRC website flash version</a>
+                        <a class="animation-container" href="javascript:showAnimation(4);">Artillerymen III</a>
+                        <a class="animation-container" href="javascript:showAnimation(5);">SRC pinball</a>
+                        <a class="animation-container" href="javascript:showAnimation(6);">Piano simulator</a>
+                        <a class="animation-container" href="javascript:showAnimation(7);">Gobang simulator</a>
+                    </div>
+                    
+                    <div class="col-xs-6" id="animation-viewer" style="width:550px; margin-bottom:20px;padding:0;overflow:hidden; text-align:left;">
+                        <div style="height:462px;"><h4 class="text-info" style="margin:10px; color:white" id="animation-intro">Here are only a small part of my works. Most of them are hard to find for a variety of reasons. I will upload them once I find them.</h4></div>
+                    </div>
+
+                    
+                    <div class="col-xs-3" style="text-align:left;min-width:250px;">
+                        <h4 class="text-info" style="margin-top:0px; color:white" id="animation-intro">Select from left to view my work.</h4>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="clear" style="height:40px;"></div>
         </div>
 
         <!-- Traveling -->
