@@ -569,7 +569,7 @@
         </div>
 
         <!-- Interests -->
-        <div class="row section" id="mypast" style="padding-top: 4%; background: #f1c410; min-height: 360px;">
+        <div class="row section" id="mypast" style="padding-top: 8%; background: #f1c410; min-height: 360px;">
             <div class="col-xs-12" style="text-align:center" id="interest-title">
                 <h3 class="text-info" style="margin-top:0px; color:white">I have lots of interests, although I am an amateur of most of them.</h3>
             </div>
@@ -856,9 +856,9 @@
 
             // Resize sections
             $(window).load(function(){
-              $('.section').css('min-height', $(window).height());
+              $('.section').css('min-height', $(window).height() + 50);
             });
-            $('.section').css('min-height', $(window).height());
+            $('.section').css('min-height', $(window).height() + 50);
             
             $(window).resize(function() {
                   if (experienceHeight < $('#experiences').height()) {
