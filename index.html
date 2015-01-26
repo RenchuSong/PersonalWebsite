@@ -150,7 +150,7 @@
                         <li><a href="javascript:void" onclick="scrollTo('experiences')" class="" id="expsNav">Experiences</a></li>
                         <li><a href="javascript:void" onclick="scrollTo('resume')" class="" id="resumeNav">Resume</a></li>
                         <li><a href="javascript:void" onclick="scrollTo('mypast')" class="" id="pastNav">My Interests</a></li>
-                        <li><a href="javascript:void" onclick="scrollTo('mydream')" class="" id="dreamNav">My Dream</a></li>
+                        <!-- <li><a href="javascript:void" onclick="scrollTo('mydream')" class="" id="dreamNav">My Dream</a></li> -->
                     </ul>
                     <script>
                         function scrollTo(element) {
@@ -683,9 +683,9 @@
             <div style="height:20px;clear:both;"></div>
         </div>
         
-        <div class="row section" id="mydream" style="padding-top: 8%; background: #1cabe3; min-height: 360px;">
+        <!-- <div class="row section" id="mydream" style="padding-top: 8%; background: #1cabe3; min-height: 360px;">
 
-        </div>
+        </div> -->
         
 
       
@@ -816,10 +816,10 @@
                     }
                 }
 
-                if(height > ($('#mydream').offset().top-($(window).height()/2))) {
+                /*if(height > ($('#mydream').offset().top-($(window).height()/2))) {
                     $('#dreamNav').addClass('btn-primary').addClass('active');
                 }
-                else if(height > ($('#mypast').offset().top-($(window).height()/2))) {
+                else */if(height > ($('#mypast').offset().top-($(window).height()/2))) {
                     $('#pastNav').addClass('btn-primary').addClass('active');
                     $('#interest-title').addClass('animated').addClass('wobble');
                     $('#interest-item-1').removeClass('outer').addClass('animated').addClass('bounceInLeft');
