@@ -1,0 +1,26 @@
+<div class="col-lg-4">
+            <div class="well" style="max-width:400px;" align="center">
+              <h4 align="left" style="margin-top:0px"><strong><i class="fa fa-globe"></i> Current City: </strong><span class="text-warning">Ithaca</span></h4>
+              <p align="left">Pursuing my Masters in Information Science!</p>
+              <div id="map" style="width: auto; height: 190px; position: relative;" class="leaflet-container leaflet-retina leaflet-fade-anim" tabindex="0"><div class="leaflet-map-pane leaflet-pan-anim" style="-webkit-transform: translate3d(-38px, 0px, 0); -webkit-transition: all 0.25s cubic-bezier(0, 0, 0.5, 1); transition: all 0.25s cubic-bezier(0, 0, 0.5, 1);"><div class="leaflet-tile-pane"><div class="leaflet-layer"><div class="leaflet-tile-container"></div><div class="leaflet-tile-container leaflet-zoom-animated"><img class="leaflet-tile leaflet-tile-loaded" src="https://b.tiles.mapbox.com/v3/chalob.i1khk0i2/13/2355/3026.png" style="height: 256px; width: 256px; -webkit-transform: translate3d(96px, -210px, 0);"><img class="leaflet-tile leaflet-tile-loaded" src="https://a.tiles.mapbox.com/v3/chalob.i1khk0i2/13/2355/3027.png" style="height: 256px; width: 256px; -webkit-transform: translate3d(96px, 46px, 0);"><img class="leaflet-tile leaflet-tile-loaded" src="https://a.tiles.mapbox.com/v3/chalob.i1khk0i2/13/2354/3026.png" style="height: 256px; width: 256px; -webkit-transform: translate3d(-160px, -210px, 0);"><img class="leaflet-tile leaflet-tile-loaded" src="https://a.tiles.mapbox.com/v3/chalob.i1khk0i2/13/2356/3026.png" style="height: 256px; width: 256px; -webkit-transform: translate3d(352px, -210px, 0);"><img class="leaflet-tile leaflet-tile-loaded" src="https://b.tiles.mapbox.com/v3/chalob.i1khk0i2/13/2354/3027.png" style="height: 256px; width: 256px; -webkit-transform: translate3d(-160px, 46px, 0);"><img class="leaflet-tile leaflet-tile-loaded" src="https://b.tiles.mapbox.com/v3/chalob.i1khk0i2/13/2356/3027.png" style="height: 256px; width: 256px; -webkit-transform: translate3d(352px, 46px, 0);"></div></div></div><div class="leaflet-objects-pane"><div class="leaflet-shadow-pane"></div><div class="leaflet-overlay-pane"></div><div class="leaflet-marker-pane"><img src="https://a.tiles.mapbox.com/v3/marker/pin-m+f86767@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" title="Gates Hall, Cornell University" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; -webkit-transform: translate3d(259px, 133px, 0); z-index: 133;"><img src="https://a.tiles.mapbox.com/v3/marker/pin-m+1087bf@2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" title="Cornell Univeristy" tabindex="0" style="margin-left: -15px; margin-top: -35px; width: 30px; height: 70px; -webkit-transform: translate3d(-2096894px, 132px, 0); z-index: 132;"></div><div class="leaflet-popup-pane"><div class="leaflet-popup  leaflet-zoom-animated" style="opacity: 1; -webkit-transform: translate3d(259px, 133px, 0); bottom: 28px; left: -95px;"><div class="leaflet-popup-content-wrapper"><div class="leaflet-popup-content" style="width: 188px;"><div class="marker-title">Gates Hall, Cornell University</div></div></div><div class="leaflet-popup-tip-container"><div class="leaflet-popup-tip"></div></div></div></div></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out">-</a></div></div><div class="leaflet-top leaflet-right"><div class="leaflet-control-grid map-tooltip leaflet-control" style="display: none;"><a class="close" href="#" title="close">close</a><div class="map-tooltip-content"></div></div></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="map-legends wax-legends leaflet-control" style="display: none;"></div><div class="mapbox-control-info mapbox-small mapbox-control-info-right leaflet-control" style="display: block;"><div class="map-info-container"><a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox © OpenStreetMap</a> <a class="mapbox-improve-map" href="https://www.mapbox.com/map-feedback/#chalob.i1khk0i2/-76.491/42.450/13" target="_blank">Improve this map</a></div><a class="mapbox-info-toggle mapbox-icon mapbox-icon-info" href="#"></a></div></div></div></div>
+              <script>
+
+              L.mapbox.accessToken = 'pk.eyJ1IjoiY2hhbG9iIiwiYSI6IlVsZElHdnMifQ.FD9Sb2IRlfnw4XxBQbCZ-Q';
+              var map = L.mapbox.map('map', 'songrenchu.l0ejennp').setView([42.4496725,-76.4976751],13);
+
+              L.mapbox.featureLayer({
+                  type: 'Feature',
+                  geometry: {
+                      type: 'Point',
+                      coordinates: [-76.4976751, 42.4496725]
+                  },
+                  properties: {
+                      title: 'Gates Hall, Cornell University',
+                      'marker-color': '#f86767',
+                      'marker-size': 'medium',
+                  }
+              }).addTo(map).openPopup();
+
+
+              </script>
+            </div>

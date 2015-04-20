@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+        <title>Renchu Song</title>
+        <meta name="description" content="Renchu's Portfolio">
+        <meta property="og:title" content="Renchu Song">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="myface.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:description" content="Renchu's Portfolio">
+        <link href="./dist/css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="./css/bootswatch.css" rel="stylesheet" media="screen">
+        <link href="./css/animate.css" rel="stylesheet" media="screen">
+        <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+        <link href="./css/incontent.css" rel="stylesheet">
+        <link href="./css/figure.css" rel="stylesheet">
+        
+        <!-- Animation Delay, Not Sure Why Origianl Not Working -->
+        <link href="./css/delay.css" rel="stylesheet">
+
+
+        <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+        <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/bootswatch.js"></script>
+        <script src="./js/modernizr.custom.js"></script>
+      
+        <style>
+            html, body { overflow-x:hidden; padding:0px;}
+            .section{
+                padding-left:1.5em;
+                padding-right:1.5em;
+                padding-top:5%;
+            }
+            p {
+                font-size:1.1em;
+            }
+            div, a, a:focus, p {
+                color: #ffffff;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: #ffff00;
+            }
+
+            a:focus, a:active {
+                text-decoration: none;
+            }
+
+            .clear {
+                width:100%;
+                clear:both;
+            }
+
+            .outer {
+                position:relative;
+                left:-1500px;
+            }
+            
+            .col-md-4 {
+                margin-top: 20px;
+            }
+
+            .col-md-6 {
+                padding-left: 0;
+                margin-top: 20px;
+                max-width: 500px;
+            }
+
+            #resume-container a:focus, #resume-container a:hover {
+                color:white;
+            }
+
+            .btn-border {
+                border: 4px solid white; 
+            }
+
+            .contact-logo-float {
+                position:absolute;
+            }
+
+            #nav-bar-wrapper {
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+            }
+
+            .fixed {
+                position:fixed;
+                top:50px;
+            }
+
+            .bottomed {
+                position: absolute;
+                left:0;
+                top:auto;
+                bottom:0;
+            }
+
+            .experience-time {
+                width:100px; 
+                height:100px; 
+                background-color:#F7952B; 
+                margin-left:50px;
+                z-index:10;
+                border-radius:50px;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+                padding:18px 20px 0 16px;
+                font-size: 24px;
+                text-align: center;
+                font-family: "Arial Black", Gadget, sans-serif;
+            }
+
+            .experience-container {
+                margin-left: 150px;
+                padding: 0 20px 0 20px;
+            }
+
+            .experience-img, .map-container {
+                border-radius:5px;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+            }
+
+            .map-container div {
+                color: #000000;
+            }
+
+            a.interest-anchor {
+                display: block;
+                padding:20px;
+            }
+            a.interest-anchor:hover {
+                background-color: #F99704;
+                border-radius: 10px;
+            }
+
+            .project-img {
+                border-radius:5px;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+                margin-bottom: 20px;
+            }
+
+            a.project-link {
+                display: block;
+                padding:5px;
+                border: 2px solid white;
+                border-radius:5px;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            a.project-link:hover {
+                border: 2px solid #ffff00;
+            }
+        </style>
+
+    </head>
+
+    <body style="background: #6860d7;">
+        <div class="navbar navbar-default navbar-fixed-top" style="background: #6860d7; border:0;" id="nav-bar-wrapper">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="javascript:void(0)" class="navbar-brand back" style="color:white"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Renchu Song | Projects</a>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function(){
+                    $('a.back').click(function(){
+                        parent.history.back();
+                        return false;
+                    });
+                });
+            </script>
+        </div>
+        <div style="height:42px;"></div>
+
+        <!-- Box -->
+        <a id="box"></a>
+        <div class="row section" style="padding-top: 8%; background: #1cabe3; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">BOX! - Spatial-Reasoning Platformer Game</h2>
+                <h4 class="text-info" style="margin-top:0px; color:white">Sep 2014 ~ Dec 2014 at Cornell University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is a joint effort with <a href="https://github.com/jercytryn" target="blank">Jeremy Cytryn</a>, <a href="http://nndiebold.tumblr.com" target="blank">Natalie Diebold</a>, <a href="http://messybin.tumblr.com" target="blank">Kevin Ma</a>, <a href="https://github.com/WQPeck" target="blank">Will Peck</a>, <a href="https://www.linkedin.com/pub/tian-hui-samuel-chen/4a/2b8/715" target="blank">Sam Chen</a>, and <a href="http://blasoconica.livejournal.com" target="blank">Brigid Choi.</a></h4>
+                <h4>
+                    <p>"Box" is a popular spatial reasoning platformer game, and has been played for more than 50,000 people all around the world.</p>
+                    <p>"Box!" is a developed using ActionScript 3. The character is trapped in a box, and has to find his way through the door to escape. He must enter the door with the correct orientation. In order to do this, he has to go through six faces and trigger the box to rotate to re-orient. The rotation can be triggered by climbing up or dropping down the current face through the edges.</p>
+                    <p>There are many interesting elements. Create / destroy boxes to make ladders. Statues and fire balls should be avoided.</p>
+                </h4>
+                <h3 class="text-info animated flash delayp9" style="margin-top:0px; color:white">BOX! is reviewed by Jay Is Game: <a href="http://jayisgames.com/archives/2014/12/box.php" target="blank">http://jayisgames.com/archives/2014/12/box.php</a></h3>
+            </div>
+            <div class="col-xs-12" style="text-align:center; margin-bottom:10px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="http://www.kongregate.com/games/Casiogre/box" target="blank">Play BOX!</a>
+            </div>
+            <div style="padding:20px 35px 20px 35px;">
+                <div class="col-xs-4" style="min-width:350px">
+                    <img class="img-responsive project-img" src="./content/projects/details/box1.png">
+                </div>
+                <div class="col-xs-4" style="min-width:350px">
+                    <img class="img-responsive project-img" src="./content/projects/details/box2.png">
+                </div>
+                <div class="col-xs-4" style="min-width:350px">
+                    <img class="img-responsive project-img" src="./content/projects/details/box3.png">
+                </div>
+                <div class="clear" style="height:40px;"></div>
+            </div>
+        </div>
+
+        <!-- Charted -->
+        <a id="charted"></a>
+        <div class="row section" style="padding-top: 8%; background: #35a8a1; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">Google Dart Charted Library</h2>
+                <h4 class="text-info" style="margin-top:0px; color:white">May 2014 ~ Aug 2014 at Google</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is a joint effort with <a href="https://github.com/midoringo8823" target="blank">Micheal Cheng</a> and <a href="https://github.com/psunkari" target="blank">Prasad Psunkari</a>. After my internship, it is open-sourced on github: <a href="https://github.com/google/charted" target="blank">https://github.com/google/charted</a></h4>
+                <h4>
+                    Dart Charted Library is a selection based D3.js like charting library for data visualisation in Dart language. It provides a flexible way for users to configure their charts by setting axes range, tick formats, combining different charts together (bar chart and line chart for the most common case). It also provides a smooth transition when data changes.
+                </h4>
+                <h4>
+                    My contribution: pie chart renderer, stacked-bar chart renderer, transition of data region and axes, many other small parts of design and implementation, and test cases.
+                </h4>
+            </div>
+            <div class="col-xs-12" style="text-align:center; margin-bottom:10px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="https://pub.dartlang.org/packages/charted" target="blank">View Charted!</a>
+            </div>
+            <div style="padding:20px 35px 20px 35px;">
+                <div class="col-xs-4" style="min-width:350px">
+                    <img class="img-responsive project-img" src="./content/projects/details/chart1.png">
+                </div>
+                <div class="col-xs-4" style="min-width:350px">
+                    <img class="img-responsive project-img" src="./content/projects/details/chart2.png">
+                </div>
+                <div class="col-xs-4" style="min-width:350px">
+                    <img class="img-responsive project-img" src="./content/projects/details/chart3.png">
+                </div>
+                <div class="clear"></div>
+                <div class="col-xs-4" style="min-width:350px">
+                    <img class="img-responsive project-img" src="./content/projects/details/chart4.png">
+                </div>
+                <div class="col-xs-4" style="min-width:350px">
+                    <img class="img-responsive project-img" src="./content/projects/details/chart5.png">
+                </div>
+                <div class="col-xs-4" style="min-width:350px">
+                    <img class="img-responsive project-img" src="./content/projects/details/chart6.png">
+                </div>
+                <div class="clear" style="height:40px;"></div>
+            </div>
+        </div>
+
+        <!-- tMap -->
+        <a id="tmap"></a>
+        <div class="row section" style="padding-top: 8%; background: #ee5f35; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">tMap - Indoor Navigation System App</h2>
+                <h4 class="text-info" style="margin-top:0px; color:white">Feb 2014 ~ March 2014 at Fudan University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is a joint effort with <a href="http://cn.linkedin.com/pub/yanbo-bai/40/a78/9b4" target="blank">Yanbo Bai</a>, <a href="https://github.com/youyinailao" target="blank">Weimin Wang</a>, <a href="https://cn.linkedin.com/pub/suikai-li/48/95/455" target="blank">Suikai Li</a> and <a href="https://www.linkedin.com/pub/shimin-yang/3a/2a0/654" target="blank">Shimin Yang</a>.</h4>
+                <h4>
+                    Developed an Android-based indoor navigation application. Used Wi-Fi fingerprint algorithm to get the rough location of the user, and took orientation and acceleration sensor data to implement step detecting algorithm to transit between the rough locations. Used OpenGL ES to render indoor 3D models. Won special award on iShamrock Software Competition 2014.
+                </h4>
+            </div>
+            <div class="col-xs-12" style="text-align:center; margin-bottom:10px;">
+                <a class="project-link" style="width:350px; margin-left:auto; margin-right:auto;" href="./content/projects/details/tMap_AndroidClient.apk" target="blank">Download Demo App ( Android )</a>
+            </div>
+            <div style="padding:20px 35px 20px 35px;">
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/tmap1.png">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/tmap2.png">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/tmap3.png">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/tmap4.png">
+                </div>
+                <div class="clear" style="height:40px;"></div>
+            </div>
+        </div>
+        
+        <!-- dMap -->
+        <a id="dmap"></a>
+        <div class="row section" style="padding-top: 8%; background: #f47e94; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">dMap - Room-Based Social Network Service Website</h2>
+                <h4 class="text-info" style="margin-top:0px; color:white">Feb 2012 ~ March 2012 at Fudan University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is a joint effort with <a href="http://au.linkedin.com/pub/xuan-luo/a1/160/b89" target="blank">Xuan Luo</a>, <a href="https://github.com/Raysmond/" target="blank">Jiankun Lei</a> and <a href="https://www.linkedin.com/pub/yao-star-zhang/5a/631/909" target="blank">Yao Zhang</a>.</h4>
+                <h4>
+                    Developed a Location Based Social Network project. Users can post events and comments in rooms, share and attend events, upload event photos and so on. Users can also follow a room / user, and all events related to that room or user will show on their personal pages. DMap was awarded Champion on iShamrock Software Competition 2012.
+                </h4>
+            </div>
+            <div class="col-xs-6" style="text-align:center; margin-bottom:10px; min-width:300px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="http://dmap-dmaprenchu.rhcloud.com" target="blank">Visit dMap</a>
+            </div>
+            <div class="col-xs-6" style="text-align:center; margin-bottom:10px; min-width:300px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="https://github.com/RenchuSong/dmap" target="blank">View Code</a>
+            </div>
+            <div style="padding:20px 35px 20px 35px;">
+                <div class="col-xs-6" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/dmap1.png">
+                </div>
+                <div class="col-xs-6" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/dmap2.png">
+                </div>
+                <div class="clear"></div>
+                <div class="col-xs-6" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/dmap3.png">
+                </div>
+                <div class="col-xs-6" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/dmap4.png">
+                </div>
+                <div class="clear" style="height:40px;"></div>
+            </div>
+        </div>
+
+        <!-- Conservation -->
+        <a id="conservation"></a>
+        <div class="row section" style="padding-top: 8%; background: #f1c410; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">Conservation - Desktop Social Network Service Client</h2>
+                <h4 class="text-info" style="margin-top:0px; color:white">Nov 2012 ~ Dec 2012 at Fudan University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is my final project of Java Programming course.</h4>
+                <h4>
+                    Conservation is a desktop social network service client. It uses Socket to communicate between client side and server side, and uses Microsoft Access database (which is the requirement of the course, of course not my preference).
+                </h4>
+                <h4>
+                    Conservation has a lot of functionalities, including writing / sharing articles, uploading / sharing photos, music and video, downloading apps, adding friends, leaving message, and so on.
+                </h4>
+                <h4>
+                    Conservation is more than a pure social network software. It is also a resource management tool. It has a machine-binded resource management strategy. Only resources shared with others are uploaded to server, and private resource are saved locally. It also has a robust task management process. Taking advantage of logging, it can restart unfinished tasks after crashing unexpectly.
+                </h4>
+                
+            </div>
+            <div class="col-xs-12" style="text-align:center; margin-bottom:10px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="./content/projects/details/conservation.zip" target="blank">Download</a>
+            </div>
+            <div style="padding:20px 35px 20px 35px;">
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation1.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation2.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation3.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation4.jpg">
+                </div>
+                <div class="clear"></div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation5.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation6.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation7.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation8.jpg">
+                </div>
+                <div class="clear"></div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation9.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation10.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation11.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation12.jpg">
+                </div>
+                <div class="clear"></div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation13.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/conservation14.jpg">
+                </div>
+
+                <div class="clear" style="height:40px;"></div>
+            </div>
+        </div>
+        
+        <!-- FDUGroup -->
+        <a id="fdugroup"></a>
+        <div class="row section" style="padding-top: 8%; background: #1cabe3; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">FDUGroup - Group-Based Social Network Service Website</h2>
+                <h4 class="text-info" style="margin-top:0px; color:white">Oct 2013 ~ Dec 2013 at Fudan University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is a joint effort with <a href="https://github.com/Raysmond/" target="blank">Jiankun Lei</a>, <a href="https://github.com/wishstudio" target="blank">Xiangyan Sun</a>, <a href="https://github.com/junshiguo" target="blank">Junshi Guo</a>, <a href="https://github.com/zyz282994112" target="blank">Yizhou Zhang</a> and <a href="https://github.com/Moinheart" target="blank">Junhao Wu</a>.</h4>
+                <h4>
+                    FDUGroup is a group based social networking web project. It is based on a lightweight php MVC framework Rays: <a href="https://github.com/Raysmond/Rays" target="blank">https://github.com/Raysmond/Rays</a>. The front-end side of FDUGroup leverages Bootstrap, jQuery, Masonry for Waterfall, CKEditor, PHPMailer and DotDotDot.
+                </h4>
+            </div>
+            <div class="col-xs-4" style="text-align:center; margin-bottom:10px; min-width:300px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="http://fdugroup-dmaprenchu.rhcloud.com/FDUGroup/" target="blank">Visit FDUGroup</a>
+            </div>
+            <div class="col-xs-4" style="text-align:center; margin-bottom:10px; min-width:300px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="./content/projects/details/FDUGroup_report.pdf" target="blank">Download Report</a>
+            </div>
+            <div class="col-xs-4" style="text-align:center; margin-bottom:10px; min-width:300px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="https://github.com/Raysmond/FDUGroup" target="blank">View Code</a>
+            </div>
+            <div style="padding:20px 35px 20px 35px;">
+                <div class="col-xs-4" style="min-width:350px">
+                    <img class="img-responsive project-img" src="./content/projects/details/FDUGroup1.png">
+                </div>
+                <div class="col-xs-4" style="min-width:350px">
+                    <img class="img-responsive project-img" src="./content/projects/details/FDUGroup2.png">
+                </div>
+                <div class="col-xs-4" style="min-width:350px">
+                    <img class="img-responsive project-img" src="./content/projects/details/FDUGroup3.png">
+                </div>
+                <div class="clear" style="height:40px;"></div>
+            </div>
+        </div>
+
+        <!-- TimeBar -->
+        <a id="timebar"></a>
+        <div class="row section" style="padding-top: 8%; background: #35a8a1; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">TimeBar - Campus Event Platform</h2>
+                <h4 class="text-info" style="margin-top:0px; color:white">April 2012 ~ April 2012 at Fudan University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is my mid-term project of Database course.</h4>
+                <h4>
+                    TimeBar campus event platform is a location based social networking project on web. It is developed by HTML5, CSS3 and MySql. Users can search for events by changing the time range, and switch between four campus of Fudan University. The events are shown on a 2.5D map.
+                </h4>
+            </div>
+            <div class="col-xs-12" style="text-align:center; margin-bottom:10px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="http://www.songrenchu.com/TimeBar/" target="blank">Visit TimeBar</a>
+            </div>
+            <div style="padding:20px 35px 20px 35px;">
+                <div class="col-xs-6" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/timebar1.png">
+                </div>
+                <div class="col-xs-6" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/timebar2.png">
+                </div>
+                <div class="clear" style="height:40px;"></div>
+            </div>
+        </div>
+
+        <!-- PRESS -->
+        <a id="press"></a>
+        <div class="row section" style="padding-top: 8%; background: #ee5f35; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">PRESS: A Novel Framework of Trajectory Compression in Road Networks</h2>
+                <h3 class="text-info" style="margin-top:0px; color:white">Published at <a href="http://www.vldb.org/2014/" target="blank">Proceeding of VLDB 2014</a></h3>
+                <h4 class="text-info" style="margin-top:0px; color:white">May 2013 ~ Sep 2013 at Fudan University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is a joint effort with <a href="http://homepage.fudan.edu.cn/wwsun/" target="blank">Prof. Weiwei Sun</a>, <a href="http://www.mysmu.edu/faculty/bhzheng/" target="blank">Prof. Baihua Zheng</a> and <a href="http://research.microsoft.com/en-us/people/yuzheng/" target="blank">Prof. Yu Zheng</a>.</h4>
+                <h4>
+                    Location data becomes more and more important. In this paper, we focus on the trajectory data, and propose a new framework, namely PRESS (Paralleled Road-Network-Based Trajectory Compression), to effectively compress trajectory data under road network constraints. Different from existing work, PRESS proposes a novel representation for trajectories to separate the spatial representation of a trajectory from the temporal representation, and proposes a Hybrid Spatial Compression (HSC) algorithm and error Bounded Temporal Compression (BTC) algorithm to compress the spatial and temporal information of trajectories respectively. PRESS also supports common spatial-temporal queries without fully decompressing the data. Through an extensive experimental study on real trajectory dataset, PRESS significantly outperforms existing approaches in terms of saving storage cost of trajectory data with bounded errors.
+                </h4>
+            </div>
+            <div class="col-xs-4" style="text-align:center; margin-bottom:10px; min-width:300px; ">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="http://www.vldb.org/pvldb/vol7/p661-song.pdf" target="blank">View Paper</a>
+            </div>
+            <div class="col-xs-4" style="text-align:center; margin-bottom:10px; min-width:300px; ">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="http://arxiv.org/abs/1402.1546" target="blank">View Tech Report</a>
+            </div>
+            <div class="col-xs-4" style="text-align:center; margin-bottom:10px; min-width:300px; ">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="https://github.com/RenchuSong/PRESS" target="blank">View Code</a>
+            </div>
+            <div class="clear" style="height:40px;"></div>
+        </div>
+        
+        <!-- Map Matching -->
+        <a id="mapmatching"></a>
+        <div class="row section" style="padding-top: 8%; background: #f47e94; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">Quick Map Matching Using Multi-Core CPUs</h2>
+                <h3 class="text-info" style="margin-top:0px; color:white">Published at <a href="http://acmgis2012.cs.umd.edu" target="blank">ACM SIGSPATIAL 2012</a></h3>
+                <h4 class="text-info" style="margin-top:0px; color:white">April 2012 ~ Aug 2012 at Fudan University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is a joint effort with <a href="https://www.linkedin.com/pub/wei-lu/60/4a7/205" target="blank">Wei Lu</a>, <a href="http://homepage.fudan.edu.cn/wwsun/" target="blank">Prof. Weiwei Sun</a>, <a href="http://www.cse.unt.edu/~huangyan/" target="blank">Prof. Yan Huang</a> and <a href="https://www.researchgate.net/profile/Chunan_Chen" target="blank">Chunan Chen</a>.</h4>
+                <h4>
+                    The ACM SIGSPATIAL Cup 2012 is about map matching, a problem of correctly matching a sequence of GPS sampling points to the roads on a digital map. This paper describes one of the winning submissions of the competition. The approach applies multi-threading technology to map matching in order to reduce running time and we propose an improvement to the Hidden Markov Model (HMM) map matching algorithm.
+                </h4>
+            </div>
+            <div class="col-xs-12" style="text-align:center; margin-bottom:10px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="http://dl.acm.org/citation.cfm?id=2424428" target="blank">View Paper</a>
+            </div>
+            <div class="clear" style="height:40px;"></div>
+        </div>
+
+        <!-- Geo-Fencing -->
+        <a id="geofencing"></a>
+        <div class="row section" style="padding-top: 8%; background: #f1c410; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">Quick Geo-Fencing Using Trajectory Partitioning and Boundary Simplification</h2>
+                <h3 class="text-info" style="margin-top:0px; color:white">Published at <a href="http://sigspatial2013.sigspatial.org" target="blank">ACM SIGSPATIAL 2013</a></h3>
+                <h4 class="text-info" style="margin-top:0px; color:white">April 2013 ~ Aug 2013 at Fudan University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is a joint effort with <a href="https://cn.linkedin.com/pub/suikai-li/48/95/455" target="blank">Suikai Li</a>, <a href="http://homepage.fudan.edu.cn/wwsun/" target="blank">Prof. Weiwei Sun</a>, <a href="https://cn.linkedin.com/pub/张卿-单/a8/b72/b33" target="blank">Zhangqing Shan</a>, <a href="https://cn.linkedin.com/pub/哲泳-陈/a9/5b9/682/en" target="blank">Zheyong Chen</a> and <a href="https://cn.linkedin.com/pub/xinyu-zhang/90/89a/a78" target="blank">Xinyu Zhang</a>.</h4>
+                <h4>
+                    The ACM SIGSPATIAL Cup 2013 is about geo-fencing, a problem of determining whether sampled location points fall inside or within a certain distance from virtual perimeters for real-world geographic areas. This paper describes one of the winning submissions of the competition. The approach applies two novel techniques, namely Trajectory Partitioning (TP) and Boundary Simplification (BS). TP partitions the movement trajectory of an object into segments and processes the points within the same segment simultaneously. BS simplifies the polygons thus accelerates the geo-fencing process.
+                </h4>
+            </div>
+            <div class="col-xs-12" style="text-align:center; margin-bottom:10px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="http://dl.acm.org/citation.cfm?id=2527265" target="blank">View Paper</a>
+            </div>
+            <div class="clear" style="height:40px;"></div>
+        </div>
+        
+        <!-- Silica Dictionary -->
+        <a id="silica"></a>
+        <div class="row section" style="padding-top: 8%; background: #1cabe3; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">Silica Intelligent Dictionary</h2>
+                <h4 class="text-info" style="margin-top:0px; color:white">Feb 2012 ~ March 2012 at Fudan University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is a joint effort with <a href="https://cn.linkedin.com/pub/chen-wang/40/937/aba" target="blank">Chen Wang</a> and <a href="https://www.linkedin.com/pub/shimin-yang/3a/2a0/654" target="blank">Shimin Yang</a>.</h4>
+                <h4>
+                    Developed a dictionary supporting prefix-matching / suffix-matching / fuzzy / phonetic searching.
+                </h4>
+                <h4>
+                    The vocabulary file (data/wordList.txt) can be substituted by bigger ones, as long as following the same file format. 
+                </h4>
+            </div>
+            <div class="col-xs-6" style="text-align:center; margin-bottom:10px; min-width:300px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="./content/projects/details/silica.zip" target="blank">Download</a>
+            </div>
+            <div class="col-xs-6" style="text-align:center; margin-bottom:10px; min-width:300px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="https://github.com/RenchuSong/SilicaDictionary" target="blank">View Code</a>
+            </div>
+
+            <div class="clear"></div>
+            <div class="col-xs-8" style="float:none; min-width:400px;margin-left:auto; margin-right:auto;">
+                <img class="img-responsive project-img" src="./content/projects/details/silica.png">
+            </div>
+            <div class="clear" style="height:40px;"></div>
+        </div>
+
+        <!-- Protein Viewer -->
+        <a id="ptviewer"></a>
+        <div class="row section" style="padding-top: 8%; background: #35a8a1; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">Protein Viewer JavaScript Library</h2>
+                <h4 class="text-info" style="margin-top:0px; color:white">Feb 2015 ~ Feb 2015 at Cornell University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is a joint effort with <a href="https://github.com/antinomyra/" target="blank">Ke Liu</a> and <a href="https://github.com/MaskRay" target="blank">Ray Song</a>.</h4>
+                <h4>
+                    A light weight easy using JavaScript protein display library based on three.js. The library provides a one-step data loading method, which can load several proteins at one time. Alternatively, users can manually add each protein. The library also provides users the ability to rotate / move each protein and change its color. Dragging on the screen will trigger the rotation of the whole scene.
+                </h4>
+            </div>
+            <div class="col-xs-6" style="text-align:center; margin-bottom:10px; min-width:300px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="http://renchusong.github.io/ProteinViewer/demo.html" target="blank">Visit Demo Page</a>
+            </div>
+            <div class="col-xs-6" style="text-align:center; margin-bottom:10px; min-width:300px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="https://github.com/RenchuSong/ProteinViewer" target="blank">View Code</a>
+            </div>
+            <div class="clear"></div>
+            <div style="padding:20px 35px 20px 35px;">
+                <div class="col-xs-8" style="float:none; min-width:400px;margin-left:auto; margin-right:auto;">
+                    <img class="img-responsive project-img" src="./content/projects/details/ptviewer.png">
+                </div>
+                <div class="clear" style="height:40px;"></div>
+            </div>
+        </div>
+
+        <!-- Flint -->
+        <a id="flint"></a>
+        <div class="row section" style="padding-top: 8%; background: #ee5f35; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">Flint - Mentorship Platform</h2>
+                <h4 class="text-info" style="margin-top:0px; color:white">October 2014 ~ Present at Cornell University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is a joint effort with <a href="https://www.linkedin.com/in/hoangtri" target="blank">Tri Hoang</a>, <a href="https://www.linkedin.com/in/kevinmbeaulieu" target="blank">Kevin Beaulieu</a>, <a href="https://www.linkedin.com/pub/sherry-zhao/42/609/6a0" target="blank">Sherry Zhao</a> and <a href="https://www.linkedin.com/pub/kimmi-pham/9b/33b/50a" target="blank">Kimmi Pham</a>.</h4>
+                <h4>
+                    Flint seeks to bridge academic and experiential education by connecting students with established entrepreneurs who will provide them with both guidance and real-world challenges. At its core, Flint is a mentorship program between Cornell students and experienced professionals and/or Cornell alumni. Flint is unique and highly accessible in that it provides a convenient, interactive online platform upon which students and employers can communicate with each other.
+                </h4>
+            </div>
+            <div class="col-xs-12" style="text-align:center; margin-bottom:10px;">
+                <a class="project-link" style="width:350px; margin-left:auto; margin-right:auto;" href="http://www.flinteract.com" target="blank">Visit Flint</a>
+            </div>
+            <div class="clear" style="height:40px;"></div>
+            <div style="padding:20px 35px 20px 35px;">
+                <div class="col-xs-4" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/flint1.png">
+                </div>
+                <div class="col-xs-4" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/flint2.png">
+                </div>
+                <div class="col-xs-4" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/flint3.png">
+                </div>
+                <div class="clear" style="height:40px;"></div>
+            </div>
+        </div>
+
+        <!-- Viva -->
+        <a id="viva"></a>
+        <div class="row section" style="padding-top: 8%; background: #f47e94; min-height: 360px;">
+            <div class="col-xs-12" style="text-align:center">
+                <h2 class="text-info" style="margin-top:0px; color:white">Viva - Rideshare App</h2>
+                <h4 class="text-info" style="margin-top:0px; color:white">September 2014 ~ Present at Cornell University</h4>
+            </div>
+            <div class="col-xs-12" style="text-align:left;padding:20px 50px 20px 50px;">
+                <h4 class="text-info" style="margin-top:0px; color:white">This is a joint effort with 
+                    <a href="https://www.linkedin.com/in/stanzhou/en" target="blank">Stan Zhou</a>, 
+                    <a href="https://www.linkedin.com/pub/zeying-guo/57/9a4/2b4/en" target="blank">Zeying Guo</a>, 
+                    <a href="https://www.linkedin.com/pub/yuting-chen/49/7b0/380/en" target="blank">Yuting Chen</a>, 
+                    <a href="https://www.linkedin.com/pub/wen-li/41/739/160/en" target="blank">Wen Li</a>, 
+                    <a href="https://www.linkedin.com/in/xinxianglao/en" target="blank">Xinxiang Lao</a>, 
+                    <a href="https://www.linkedin.com/pub/hao-ma/52/807/60/en" target="blank">Hao Ma</a>, 
+                    <a href="https://www.linkedin.com/pub/wei-wei/73/7b1/814/en" target="blank">Wei Wei</a> and
+                    <a href="https://www.linkedin.com/in/yangli5/en" target="blank">Yang Li</a>.
+                </h4>
+                <h4>
+                    Need a ride to social with people with similar hobbies? Want to make some friends and money by sharing your vehicle? Viva is an affordable event-based rideshare App that provides a platform for both drivers and passengers to create, join or carry trips.
+                </h4>
+            </div>
+            <div class="col-xs-6" style="text-align:center; margin-bottom:10px; min-width:300px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="https://play.google.com/store/apps/details?id=net.vivashare" target="blank">Install</a>
+            </div>
+            <div class="col-xs-6" style="text-align:center; margin-bottom:10px; min-width:300px;">
+                <a class="project-link" style="width:250px; margin-left:auto; margin-right:auto;" href="https://www.vivashare.net/viva/" target="blank">Visit Official Website</a>
+            </div>
+            <div class="clear" style="height:40px;"></div>
+            <div style="padding:20px 35px 20px 35px;">
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/viva1.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/viva2.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/viva3.jpg">
+                </div>
+                <div class="col-xs-3" style="min-width:250px">
+                    <img class="img-responsive project-img" src="./content/projects/details/viva4.jpg">
+                </div>
+                <div class="clear" style="height:40px;"></div>
+            </div>
+        </div>
+
+        <div class="row" style="background: #6860d7" id="footer-wrapper">
+            <div class="col-lg-12">
+                <div align="center">
+                    <h4>© 2015 Renchu Song | <a href="" id="intelligent-email"></a></h4>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Construct email from script to avoid spamer.
+            $(window).load(function() {
+                var item = ['o','g','s','n','u','c','h','e','n','r','@','g','m','o','c','m','i','a','l','.'];
+                var order = [2, 0, 3, 1, 9, 7, 8, 5, 6, 4, 10, 11, 15, 17, 16, 18, 19, 14, 13, 12];
+                var addr = '';
+                for (var i = 0; i < item.length; i++) addr += item[order[i]];
+                $("#intelligent-email").html(addr);
+                $("#intelligent-email").attr('href', 'mailto:' + addr);
+                
+            });
+
+            $('.section').css('min-height', $(window).height() + 50);
+
+        </script>
+    </body>
+</html>
