@@ -144,15 +144,15 @@
                 </div>
                 <div class="navbar-collapse collapse" id="navbar-main">
                     <ul class="nav navbar-nav navbar-right" id="nav">
-                        <li><a href="javascript:void" onclick="scrollTo('intro')" class="active" id="homeNav">About Me</a></li>
-                        <li><a href="javascript:void" onclick="scrollTo('projects')" class="" id="projsNav">Projects</a></li>
-                        <li><a href="javascript:void" onclick="scrollTo('experiences')" class="" id="expsNav">Experiences</a></li>
-                        <li><a href="javascript:void" onclick="scrollTo('resume')" class="" id="resumeNav">Resume</a></li>
-                        <li><a href="javascript:void" onclick="scrollTo('mypast')" class="" id="pastNav">My Interests</a></li>
+                        <li><a href="javascript:void" onclick="myScrollTo('intro');" class="active" id="homeNav">About Me</a></li>
+                        <li><a href="javascript:void" onclick="myScrollTo('projects');" class="" id="projsNav">Projects</a></li>
+                        <li><a href="javascript:void" onclick="myScrollTo('experiences');" class="" id="expsNav">Experiences</a></li>
+                        <li><a href="javascript:void" onclick="myScrollTo('resume');" class="" id="resumeNav">Resume</a></li>
+                        <li><a href="javascript:void" onclick="myScrollTo('mypast');" class="" id="pastNav">My Interests</a></li>
                         <!-- <li><a href="javascript:void" onclick="scrollTo('mydream')" class="" id="dreamNav">My Dream</a></li> -->
                     </ul>
                     <script>
-                        function scrollTo(element) {
+                        function myScrollTo(element) {
                             var height = $(window).scrollTop();
                             $('html,body').animate({scrollTop: $('#' + element).offset().top - 42}, 1000);
                         }
@@ -196,8 +196,9 @@
 
                 <div class="col-lg-12 animated bounceInUp" style="text-align:center; margin-top:20px; z-index:5;">
                     <h4>
-                        <p>Currently, I am Engineering Manager at TigerGraph Inc.</p>
-                        <p>I obtained my M.Eng. in Computer Science at Cornell University, Ithaca, NY. <br/>I obtained my B.S. in Computer Science from Fudan University, China.</p>
+                        <p>Currently, I a Senior Software Engineer at Facebook Inc.</p>
+                        <p>Previously, I am Engineering Manager at TigerGraph Inc.</p>
+                        <p>I obtained my M.Eng. in Computer Science from Cornell University, Ithaca, NY. <br/>I obtained my B.S. in Computer Science from Fudan University, China.</p>
                     </h4>
                 </div>
             </div>
